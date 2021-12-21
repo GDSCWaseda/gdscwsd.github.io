@@ -21,12 +21,12 @@ export const NavigationBar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home" className="text-link">Home</Nav.Link>
-                        <Nav.Link href="#link" className="text-link">About</Nav.Link>
-                        <Nav.Link href="#team" className="text-link">Team</Nav.Link>
-                        <Nav.Link href="#events" className="text-link">Events</Nav.Link>
-                        <Button variant="outline-dark" className="btn-link rounded-pill">
-                            <Nav.Link href="#form" className="btn-text-link">Join Us</Nav.Link>
+                        <Nav.Link href="#home" >Home</Nav.Link>
+                        <Nav.Link href="#link" >About</Nav.Link>
+                        <Nav.Link href="#team" >Team</Nav.Link>
+                        <Nav.Link href="#events" >Events</Nav.Link>
+                        <Button variant="outline-dark" className="join-btn">
+                                <Nav.Link href="#form" >Join Us</Nav.Link>
                         </Button>
                     </Nav>
                     </Navbar.Collapse>

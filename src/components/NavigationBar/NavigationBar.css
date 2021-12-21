@@ -8,13 +8,14 @@
     margin-right: 15px;
 }
 
-.btn-link{
-    padding: 0px;
-    /*width: 40%;*/
-    width: 11.5vw;
+.nav-link{
+    margin: 0 10px;
 }
-
-.text-link{
-    padding-top: 8px;
-    width: 93px;
+.join-btn{
+    padding: 0;
+    width: 110px;
+    border-radius: 25px;
+}
+button.join-btn.btn.btn-outline-dark:hover a {
+    color: white;
 }
