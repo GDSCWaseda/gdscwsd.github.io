@@ -1,3 +1,5 @@
+import './Footer.css'
+
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Google from './svg/google.svg'
@@ -12,56 +14,44 @@ export const Footer = () => {
     return (
         <div>
             <Container className='logo-pos'>
-                <Col md={{ span: 6, offset: 6 }}>
-                    <img className='footer-logo' src={ logo } alt=''/>
-                </Col>
-                </Container>
+                <div className="d-flex justify-content-center">
+                    <img className='footer-logo' src={logo} alt='' />
+                </div>
+            </Container>
 
-                <Container>
-                    <Row className="justify-content-center">
-                        <Col id='tag' md="auto">
-                            <Link to='members'> {/* Define the linked page */}
-                                About
-                            </Link>
-                        </Col>
-                        <Col id='tag' md="auto">
-                            <Link to='members'> {/* Define the linked page */}
-                                Teams
-                            </Link>
-                        </Col>
-                        <Col id='tag' md="auto">
-                            <Link to='members'> {/* Define the linked page */}
-                                Events
-                            </Link>
-                        </Col>
-                    </Row>
-                </Container>
+            <Container>
+                <div className="d-flex justify-content-center">
+                    <Link to='members' className='tag'> {/* Define the linked page */}
+                        About
+                    </Link>
+                    <Link to='members' className='tag'> {/* Define the linked page */}
+                        Teams
+                    </Link>
+                    <Link to='members' className='tag'> {/* Define the linked page */}
+                        Events
+                    </Link>
+                </div>
+            </Container>
 
-                <hr/>
+            <hr/>
 
-                <Container className='icon-pos'>
-                    <Row className="justify-content-center">
-                        <Col id='icon-tag' md="auto">
-                            <Link to='members'> {/* Define the linked page */}
-                                <img src={ Google } alt=''/>
-                            </Link>
-                        </Col>
-                        <Col id='icon-tag' md="auto">
-                            <Link to='members'> {/* Define the linked page */}
-                                <img src={ Instagram } alt=''/>
-                            </Link>
-                        </Col>
-                        <Col id='icon-tag' md="auto">
-                            <Link to='members'> {/* Define the linked page */}
-                            <img src={ LinkedIn } alt=''/>
-                            </Link>
-                        </Col>
-                    </Row>
-                </Container>
+            <Container className='icon-pos'>
+                <div className="d-flex justify-content-center">
+                    <Link to='members' className='icon-tag'> {/* Define the linked page */}
+                        <img src={ Google } alt=''/>
+                    </Link>
+                    <Link to='members' className='icon-tag'> {/* Define the linked page */}
+                        <img src={ Instagram } alt=''/>
+                    </Link>
+                    <Link to='members' className='icon-tag'> {/* Define the linked page */}
+                        <img src={ LinkedIn } alt=''/>
+                    </Link>
+                </div>
+            </Container>
 
-                <div class="copy-right text-center p-3">
-                    All Rights Reserved by GDSC Waseda
-                </div>  
+            <div class="copy-right text-center p-3">
+                All Rights Reserved by GDSC Waseda
+            </div>
         </div>
     )
 }

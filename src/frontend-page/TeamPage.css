@@ -49,36 +49,3 @@ h4{
 #item{
     padding: 10px;
 }
-
-/* ↓ここからは最後には'Footer.css'に移植*/
-.logo-pos{
-    padding-top: 150px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-}
-
-.footer-logo{
-    height: 7%;
-    width: 7%;
-}
-
-#tag{
-    padding-left: 50px;
-    padding-right: 50px;
-    font-weight: 500;
-}
-
-.icon-pos{
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-#icon-tag{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.copy-right{
-    padding-top: 50px;
-    padding-bottom: 10px;
-}
