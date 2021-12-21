@@ -15,9 +15,9 @@ export const TeamPage = () => {
         <div>
             <Layout />
             <Container>
-                <Row>
-                    <Col md={{ span:2, offset: 1 }}><img className='mid-img' src={ Image } alt=''/></Col>
-                    <Col  md={{ offset: 2 }}>
+                <Row lg={2} className='py-5'>
+                    <Col className='d-flex'><img className='mx-auto mid-img float-lg-end' src={ Image } alt=''/></Col>
+                    <Col className='px-4 py-5'>
                         <h1 className='sub-text'>Who are we ?</h1>
                         <p className='subscribe'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -30,7 +30,7 @@ export const TeamPage = () => {
                     </Col>
                 </Row>
             </Container>
-                
+
             <MembersCard/>
 
             <footer>
