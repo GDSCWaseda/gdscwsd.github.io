@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Rubik:wght@400;700&display=swap');
+
+*{
+  font-family: 'Rubik';
+  font-size: 1rem;
+  font-weight: 400;
+}
+h1{
+  font-family: 'Outfit';
+  font-weight: 200;
+  font-size: 3rem;
+}
+h3{
+  font-family: 'Outfit';
+  font-size: 2rem;
+  font-weight: 600;
+}
+h4{
+  font-family: 'Outfit';
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
 .mid-img{
     padding-top: 170px;
     padding-bottom: 150px;

@@ -3,8 +3,8 @@
 }
 
 .logo{
-    width: 2vw;
-    height: 2vh;
+    min-width: 30px;
+    max-width: 50px;
 }
 
 .btn-link{
