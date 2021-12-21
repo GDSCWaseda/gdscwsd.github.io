@@ -15,7 +15,8 @@ export const NavigationBar = () => {
             <Navbar bg="light" expand="lg" className="fixed-top">
                 <Container fluid>
                     <Navbar.Brand href="#home">
-                        <img alt="" src={ logo }  className="logo align-center"/>
+                        <img alt="" src={logo} className="logo align-center" />
+                        <span>GDSC Waseda</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
