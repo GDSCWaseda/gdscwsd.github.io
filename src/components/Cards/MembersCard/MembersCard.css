@@ -33,8 +33,8 @@ a:hover{
 }
 
 .card-frame{
-    height: 35vh;
-    width: 18vw;
+    /* height: 35vh; */
+    max-width: 200px;
     border-radius: 20px;
 }
 #title{
