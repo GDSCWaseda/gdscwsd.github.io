@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const MembersCard = () => {
+export const MembersCard = ({ props }) => {
   return (
     <div>
       <h1 className="title">Members</h1>
@@ -18,7 +18,7 @@ export const MembersCard = () => {
           <Card className="card-frame col-md-auto ">
             <Card.Img id="card-img" variant="top" src={Image} />
             <Card.Body>
-              <Card.Title id="title">FirstName LastName</Card.Title>
+              <Card.Title id="title">{props.leader.name} </Card.Title>
               <Card.Text></Card.Text>
             </Card.Body>
           </Card>
@@ -29,13 +29,13 @@ export const MembersCard = () => {
         {' '}
         {/* 'MembersCard'16枚分を1つのオブジェクトとしてグループ化 */}
         <Row xs={2} md={4} className="g-4">
-          {Array.from({ length: 16 }).map((_, idx) => (
+          {props.member.map((member) => (
             <Col>
               <Link to="members">
                 <Card className="card-frame mx-auto">
                   <Card.Img id="card-img" variant="top" src={Image} />
                   <Card.Body>
-                    <Card.Title id="title">FirstName LastName</Card.Title>
+                    <Card.Title id="title">{member.name}</Card.Title>
                     <Card.Text></Card.Text>
                   </Card.Body>
                 </Card>

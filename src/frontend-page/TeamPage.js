@@ -9,9 +9,34 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 
 export const TeamPage = () => {
+  const card = {
+    team: 'TeamPage',
+  }
+
+  const members = {
+    leader: { name: 'FirstName LastName' },
+    member: [
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+      { name: 'FirstName LastName' },
+    ],
+  }
   return (
     <div>
-      <MainCard />
+      <MainCard props={card} />
       <Container>
         <Row lg={2} className="py-5">
           <Col className="d-flex">
@@ -32,7 +57,7 @@ export const TeamPage = () => {
         </Row>
       </Container>
 
-      <MembersCard />
+      <MembersCard props={members} />
     </div>
   )
 }
