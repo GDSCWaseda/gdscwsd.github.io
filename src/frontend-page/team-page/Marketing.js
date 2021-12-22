@@ -1,16 +1,16 @@
-import './TeamPage.css'
+import '../TeamPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import MainCard from '../components/Cards/MainCard/MainCard'
-import Image from './placeholder.jpeg'
-import MembersCard from '../components/Cards/MembersCard/MembersCard'
+import MainCard from '../../components/Cards/MainCard/MainCard'
+import Image from '../placeholder.jpeg'
+import MembersCard from '../../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const TeamPage = () => {
+export const MarketingTeamPage = () => {
   const card = {
-    team: 'TeamPage',
+    team: 'MarketingTeamPage',
   }
 
   const members = {
@@ -62,4 +62,4 @@ export const TeamPage = () => {
   )
 }
 
-export default TeamPage
+export default MarketingTeamPage

@@ -8,7 +8,7 @@ import LogoRight from './svg/logo-right.svg'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const MainCard = () => {
+export const MainCard = ({ props }) => {
   return (
     <div id="main-card">
       <Card className="main-card">
@@ -19,7 +19,7 @@ export const MainCard = () => {
               <img src={LogoLeft} className="logo-left" alt="" />
             </Col>
             <Col xs="auto">
-              <Card.Text className="team-name">Frontend Team</Card.Text>
+              <Card.Text className="team-name">{props.team}</Card.Text>
             </Col>
             <Col xs="auto">
               <img src={LogoRight} className="logo-right" alt="" />
