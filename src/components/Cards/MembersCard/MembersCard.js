@@ -12,7 +12,7 @@ export const MembersCard = ({ props }) => {
   return (
     <div>
       <h1 className="title">Members</h1>
-      <h2 className="sub-title">TeamName Lead</h2>
+      <h2 className="sub-title">{props.teamName} Lead</h2>
       <Container fluid="md" className="leader justify-content-center">
         <Link to="members">
           <Card className="card-frame col-md-auto ">

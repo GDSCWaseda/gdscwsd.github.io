@@ -23,6 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&family=Rubik:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script>
+      function remove() {
+        var iframes = document.querySelector('iframe')
+        iframes.parentNode.removeChild(iframes)
+      }
+    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -34,7 +40,7 @@
     -->
     <title>GDSC Waseda | Google Developers Student Clubs Waseda</title>
   </head>
-  <body>
+  <body onLoad="remove()">
     <div id="root"></div>
     <!--
       This HTML file is a template.

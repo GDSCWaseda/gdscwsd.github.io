@@ -14,6 +14,7 @@ export const ProjectTeamPage = () => {
   }
 
   const members = {
+    teamName: 'Project Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },

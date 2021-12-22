@@ -1,5 +1,6 @@
 {
   "env": {
+    "es6": true,
     "browser": true,
     "es2021": true
   },
@@ -8,11 +9,15 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 13,
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {},
+  "rules": {
+    "react/prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "react/jsx-key": 0
+  },
   "settings": {
     "react": {
       "version": "detect"
