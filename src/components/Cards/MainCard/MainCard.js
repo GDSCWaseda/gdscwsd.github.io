@@ -9,33 +9,31 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 
 export const MainCard = () => {
-    return (
-        <div id='main-card'>
-            <Card className="main-card">
-                <Card.Title className='card-title'>GDSC Waseda</Card.Title>
-                <Container>
-                    <Row className="justify-content-center">
-                        <Col xs='auto'>
-                            <img src={ LogoLeft } className='logo-left' alt='' />
-                        </Col>
-                        <Col xs='auto'>
-                            <Card.Text className='team-name'>
-                                Frontend Team
-                            </Card.Text>
-                        </Col>
-                        <Col xs='auto'>
-                            <img src={ LogoRight } className='logo-right' alt='' />
-                        </Col>
-                    </Row>
-                </Container>
-                <p>
-                    "We must hold our organizations accountable where they control <br/>
-                    the doors by demanding clarity and tranparency around <br/>
-                    succession planning." - Ruth Porat, CFO at Alptha
-                </p>
-            </Card>
-        </div>
-    )
+  return (
+    <div id="main-card">
+      <Card className="main-card">
+        <Card.Title className="card-title">GDSC Waseda</Card.Title>
+        <Container>
+          <Row className="justify-content-center">
+            <Col xs="auto">
+              <img src={LogoLeft} className="logo-left" alt="" />
+            </Col>
+            <Col xs="auto">
+              <Card.Text className="team-name">Frontend Team</Card.Text>
+            </Col>
+            <Col xs="auto">
+              <img src={LogoRight} className="logo-right" alt="" />
+            </Col>
+          </Row>
+        </Container>
+        <p>
+          "We must hold our organizations accountable where they control <br />
+          the doors by demanding clarity and tranparency around <br />
+          succession planning." - Ruth Porat, CFO at Alptha
+        </p>
+      </Card>
+    </div>
+  )
 }
 
 export default MainCard

@@ -1,51 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Rubik:wght@400;700&display=swap');
 
-*{
+* {
   font-family: 'Rubik';
   font-size: 1rem;
   font-weight: 400;
 }
-h1{
+h1 {
   font-family: 'Outfit';
   font-weight: 200;
   font-size: 3rem;
 }
-h3{
+h3 {
   font-family: 'Outfit';
   font-size: 2rem;
   font-weight: 600;
 }
-h4{
+h4 {
   font-family: 'Outfit';
   font-size: 1.75rem;
   font-weight: 400;
 }
 
-.mid-img{
-    /* padding-top: 170px; */
-    /* padding-bottom: 150px; */
-    height: 300px;
-    /* width: 260%; */
+.mid-img {
+  /* padding-top: 170px; */
+  /* padding-bottom: 150px; */
+  height: 300px;
+  /* width: 260%; */
 }
 
-.sub-text{
-    /* padding-top: 160px;
+.sub-text {
+  /* padding-top: 160px;
     padding-left: 130px; */
-    text-align: left;
+  text-align: left;
 }
 
-.subscribe{
-    text-align: left;
-    /* padding-top: 30px; */
-    /* padding-bottom: 30px;
+.subscribe {
+  text-align: left;
+  /* padding-top: 30px; */
+  /* padding-bottom: 30px;
     padding-left: 130px; */
 }
 
-.items{
-    text-align: left;
-    /* padding-left: 150px; */
+.items {
+  text-align: left;
+  /* padding-left: 150px; */
 }
 
-#item{
-    padding: 10px;
+#item {
+  padding: 10px;
 }
