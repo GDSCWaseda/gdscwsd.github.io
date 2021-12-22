@@ -14,6 +14,7 @@ export const FrontendTeamPage = () => {
   }
 
   const members = {
+    teamName: 'Frontend Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },

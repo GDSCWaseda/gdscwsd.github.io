@@ -14,6 +14,7 @@ export const MarketingTeamPage = () => {
   }
 
   const members = {
+    teamName: 'Marketing Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },

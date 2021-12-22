@@ -14,6 +14,7 @@ export const TeamPage = () => {
   }
 
   const members = {
+    teamName: '__ Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },
