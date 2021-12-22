@@ -2,9 +2,8 @@ import './TeamPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Footer from '../components/Footer/Footer'
+import MainCard from '../components/Cards/MainCard/MainCard'
 import Image from './placeholder-300×225.jpeg'
-import Layout from '../components/Layout/Layout'
 import MembersCard from '../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
@@ -13,7 +12,7 @@ export const TeamPage = () => {
 
     return (
         <div>
-            <Layout />
+            <MainCard />
             <Container>
                 <Row lg={2} className='py-5'>
                     <Col className='d-flex'><img className='mx-auto mid-img float-lg-end' src={ Image } alt=''/></Col>
@@ -32,11 +31,6 @@ export const TeamPage = () => {
             </Container>
 
             <MembersCard/>
-
-            <footer>
-                <Footer />
-            </footer>
-
         </div>
     )
 }
