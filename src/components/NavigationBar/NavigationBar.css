@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+}
+
+.logo{
+    min-width: 30px;
+    max-width: 50px;
+    margin-right: 15px;
+}
+
+.nav-link{
+    margin: 0 10px;
+}
+.join-btn{
+    padding: 0;
+    width: 110px;
+    border-radius: 25px;
+}
+button.join-btn.btn.btn-outline-dark:hover a {
+    color: white;
+}
