@@ -1,0 +1,48 @@
+#main-card {
+  margin-top: 58px;
+}
+.main-img {
+  height: 75vh;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.main-card {
+  height: 400px;
+  background-color: lightgrey;
+  justify-content: center;
+}
+.overlay-component {
+  padding-top: 72px;
+}
+
+.card-title {
+  text-align: center;
+}
+.card-text {
+  font-family: 'Outfit';
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.logo-left {
+  max-height: 60px;
+}
+
+.inner-text {
+  float: left;
+}
+
+.logo-right {
+  max-height: 60px;
+}
+
+p {
+  clear: both;
+  padding-top: 10px;
+  text-align: center;
+}
+
+p.team-name {
+  font-size: 2.2em;
+  font-weight: 700;
+}

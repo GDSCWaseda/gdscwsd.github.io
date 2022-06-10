@@ -1,0 +1,50 @@
+.title {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+.sub-title {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.leader {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+/* グループ化されたコンポーネントに対してのスタイリング（各カード間の余白を設定したい場合は'.card-frame'で設定する） */
+.members {
+  display: flex;
+  padding-left: 46px;
+  padding-right: 30px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.card-frame {
+  /* height: 35vh; */
+  max-width: 200px;
+  border-radius: 20px;
+}
+#title {
+  padding-top: 0%;
+  font-size: 95%;
+  font-weight: 530;
+}
+
+#card-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
