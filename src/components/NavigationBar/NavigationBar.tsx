@@ -6,11 +6,11 @@ import { Container, Nav } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
 import Navbar from 'react-bootstrap/Navbar'
 import React from 'react'
-import logo from 'assets/svg/logo.svg'
+import logo from '../../assets/svg/logo.svg'
 
 export const NavigationBar = () => {
   return (
-    <div classNmae="header">
+    <div className="header">
       <Navbar bg="light" expand="lg" className="fixed-top">
         <Container fluid>
           <Navbar.Brand href="#home">
