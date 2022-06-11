@@ -1,0 +1,15 @@
+{
+  "short_name": "GDSC Waseda",
+  "name": "Google Developers Student Clubs Waseda",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "152x74",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
