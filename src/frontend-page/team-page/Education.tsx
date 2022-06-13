@@ -1,20 +1,20 @@
-import 'frontend-page/TeamPage.css'
+import '../TeamPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import MainCard from 'components/Cards/MainCard/MainCard'
-import Image from 'assets/img/placeholder.jpeg'
-import MembersCard from 'components/Cards/MembersCard/MembersCard'
+import MainCard from '../../components/Cards/MainCard/MainCard'
+import Image from '../../assets/img/placeholder.jpeg'
+import MembersCard from '../../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const MarketingTeamPage = () => {
+export const EducationTeamPage = () => {
   const card = {
-    team: 'MarketingTeamPage',
+    team: 'EducationTeamPage',
   }
 
   const members = {
-    teamName: 'Marketing Team',
+    teamName: 'Education Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },
@@ -63,4 +63,4 @@ export const MarketingTeamPage = () => {
   )
 }
 
-export default MarketingTeamPage
+export default EducationTeamPage
