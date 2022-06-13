@@ -1,2 +1,5 @@
-src/types/react-app-env.d.ts
-src/reportWebVitals.ts
+node_modules
+build
+package-lock.json
+package.json
+*.md

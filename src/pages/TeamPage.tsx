@@ -1,20 +1,20 @@
-import '../TeamPage.css'
+import './TeamPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import MainCard from '../../components/Cards/MainCard/MainCard'
-import Image from '../../assets/img/placeholder.jpeg'
-import MembersCard from '../../components/Cards/MembersCard/MembersCard'
+import MainCard from '../components/Cards/MainCard/MainCard'
+import Image from '../assets/img/placeholder.jpeg'
+import MembersCard from '../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const ProjectTeamPage = () => {
-  const card = {
-    team: 'ProjectTeamPage',
+export const TeamPage: React.FC = () => {
+  const card: { team: string } = {
+    team: 'TeamPage'
   }
 
   const members = {
-    teamName: 'Project Team',
+    teamName: '__ Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },
@@ -32,8 +32,8 @@ export const ProjectTeamPage = () => {
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-    ],
+      { name: 'FirstName LastName' }
+    ]
   }
   return (
     <div>
@@ -46,8 +46,8 @@ export const ProjectTeamPage = () => {
           <Col className="px-4 py-5">
             <h1 className="sub-text">Who are we ?</h1>
             <p className="subscribe">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <ul className="items">
               <li id="item">Benefit of Feature</li>
@@ -63,4 +63,4 @@ export const ProjectTeamPage = () => {
   )
 }
 
-export default ProjectTeamPage
+export default TeamPage

@@ -8,13 +8,13 @@ import MembersCard from '../../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const MarketingTeamPage = () => {
+export const OutreachTeamPage = () => {
   const card = {
-    team: 'MarketingTeamPage',
+    team: 'OutreachTeamPage'
   }
 
   const members = {
-    teamName: 'Marketing Team',
+    teamName: 'Outreach Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },
@@ -32,8 +32,8 @@ export const MarketingTeamPage = () => {
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-    ],
+      { name: 'FirstName LastName' }
+    ]
   }
   return (
     <div>
@@ -46,8 +46,8 @@ export const MarketingTeamPage = () => {
           <Col className="px-4 py-5">
             <h1 className="sub-text">Who are we ?</h1>
             <p className="subscribe">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <ul className="items">
               <li id="item">Benefit of Feature</li>
@@ -63,4 +63,4 @@ export const MarketingTeamPage = () => {
   )
 }
 
-export default MarketingTeamPage
+export default OutreachTeamPage
