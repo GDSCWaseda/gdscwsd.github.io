@@ -29,6 +29,8 @@
   "rules": {
     "semi": ["off", "always"],
     "import/no-named-as-default": "off",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
     "no-use-before-define": "off",
     "no-void": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
@@ -49,6 +51,12 @@
   },
   "settings": {
     "import/resolver": {
+      "alias": {
+        "map": [
+          ["~", "./"]
+        ],
+        "extensions": [".ts", ".js", ".json"]
+      },
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }

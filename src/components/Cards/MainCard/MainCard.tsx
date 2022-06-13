@@ -9,7 +9,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 
 interface MainCardProps {
-  team: String
+  team: string
 }
 
 export const MainCard: React.FC<{ props: MainCardProps }> = ({ props }) => {

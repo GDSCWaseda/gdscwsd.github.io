@@ -3,12 +3,22 @@ import './MembersCard.css'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Image from '../../../assets/img/placeholder.jpeg'
+import Image from '~/assets/img/placeholder.jpeg'
 import { Link } from 'react-router-dom'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const MembersCard = ({ props }) => {
+interface MembersCardProps {
+  teamName: string
+  leader: {
+    name: string
+  }
+  member: Array<{ name: string }>
+}
+
+export const MembersCard: React.FC<{ props: MembersCardProps }> = ({
+  props
+}) => {
   return (
     <div>
       <h1 className="title">Members</h1>
@@ -27,10 +37,9 @@ export const MembersCard = ({ props }) => {
 
       <Container fluid="md" className="members justify-content-center">
         {' '}
-        {/* 'MembersCard'16枚分を1つのオブジェクトとしてグループ化 */}
         <Row xs={2} md={4} className="g-4">
-          {props.member.map(member => (
-            <Col>
+          {props.member.map((member, index) => (
+            <Col key={index}>
               <Link to="members">
                 <Card className="card-frame mx-auto">
                   <Card.Img id="card-img" variant="top" src={Image} />
@@ -48,4 +57,4 @@ export const MembersCard = ({ props }) => {
   )
 }
 
-export default MembersCard as typeof MembersCard
+export default MembersCard
