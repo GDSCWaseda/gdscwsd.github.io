@@ -29,7 +29,7 @@ export const MembersCard = ({ props }) => {
         {' '}
         {/* 'MembersCard'16枚分を1つのオブジェクトとしてグループ化 */}
         <Row xs={2} md={4} className="g-4">
-          {props.member.map((member) => (
+          {props.member.map(member => (
             <Col>
               <Link to="members">
                 <Card className="card-frame mx-auto">
@@ -48,4 +48,4 @@ export const MembersCard = ({ props }) => {
   )
 }
 
-export default MembersCard
+export default MembersCard as typeof MembersCard

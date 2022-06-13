@@ -19,30 +19,23 @@ import {
   FrontendTeamPage,
   MarketingTeamPage,
   OutreachTeamPage,
-  ProjectTeamPage,
+  ProjectTeamPage
 } from './frontend-page/team-page/index'
 
-function App() {
-  const teamPages = {
-    backend: <BackendTeamPage />,
-    education: <EducationTeamPage />,
-    event: <EventTeamPage />,
-    finance: <FinanceTeamPage />,
-    frontend: <FrontendTeamPage />,
-    marketing: <MarketingTeamPage />,
-    outreach: <OutreachTeamPage />,
-    project: <ProjectTeamPage />,
-  }
-
+function App(): JSX.Element {
   return (
     <BrowserRouter>
       <NavigationBar />
       <Routes>
-        <Route path="/team" element={<TeamPage />} />
+        <Route path="/teams" element={<TeamPage />} />
         <Route path="/members" element={<MembersPage />} />
-        {Object.keys(teamPages).map((teamPage) => (
-          <Route path={`/team/${teamPage}`} element={teamPages[teamPage]} />
-        ))}
+        <Route path="/team/backend" element={<BackendTeamPage />} />
+        <Route path="/team/event" element={<EventTeamPage />} />
+        <Route path="/team/finance" element={<FinanceTeamPage />} />
+        <Route path="/team/frontend" element={<FrontendTeamPage />} />
+        <Route path="/team/marketing" element={<MarketingTeamPage />} />
+        <Route path="/team/outreach" element={<OutreachTeamPage />} />
+        <Route path="/team/project" element={<ProjectTeamPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

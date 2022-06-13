@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row'
 
 export const ProjectTeamPage = () => {
   const card = {
-    team: 'ProjectTeamPage',
+    team: 'ProjectTeamPage'
   }
 
   const members = {
@@ -32,8 +32,8 @@ export const ProjectTeamPage = () => {
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-    ],
+      { name: 'FirstName LastName' }
+    ]
   }
   return (
     <div>
@@ -46,8 +46,8 @@ export const ProjectTeamPage = () => {
           <Col className="px-4 py-5">
             <h1 className="sub-text">Who are we ?</h1>
             <p className="subscribe">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <ul className="items">
               <li id="item">Benefit of Feature</li>

@@ -8,7 +8,11 @@ import LogoRight from '../../../assets/svg/logo-right.svg'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const MainCard = ({ props }) => {
+interface MainCardProps {
+  team: String
+}
+
+export const MainCard: React.FC<{ props: MainCardProps }> = ({ props }) => {
   return (
     <div id="main-card">
       <Card className="main-card">

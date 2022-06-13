@@ -8,9 +8,9 @@ import MembersCard from '../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const TeamPage = () => {
-  const card = {
-    team: 'TeamPage',
+export const TeamPage: React.FC = () => {
+  const card: { team: string } = {
+    team: 'TeamPage'
   }
 
   const members = {
@@ -32,8 +32,8 @@ export const TeamPage = () => {
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
       { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-    ],
+      { name: 'FirstName LastName' }
+    ]
   }
   return (
     <div>
@@ -46,8 +46,8 @@ export const TeamPage = () => {
           <Col className="px-4 py-5">
             <h1 className="sub-text">Who are we ?</h1>
             <p className="subscribe">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <ul className="items">
               <li id="item">Benefit of Feature</li>

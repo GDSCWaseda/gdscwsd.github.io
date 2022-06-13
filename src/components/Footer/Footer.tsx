@@ -59,7 +59,9 @@ export const Footer = () => {
         </div>
       </Container>
 
-      <div className="copy-right text-center p-3">All Rights Reserved by GDSC Waseda</div>
+      <div className="copy-right text-center p-3">
+        All Rights Reserved by GDSC Waseda
+      </div>
     </footer>
   )
 }
