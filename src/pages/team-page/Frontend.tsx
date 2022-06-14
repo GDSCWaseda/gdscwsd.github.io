@@ -8,7 +8,7 @@ import MembersCard from '../../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const FrontendTeamPage: any = () => {
+export const FrontendTeamPage = (): JSX.Element => {
   const card = {
     team: 'FrontendTeamPage'
   }

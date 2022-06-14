@@ -8,7 +8,7 @@ import Google from '../../assets/svg/google.svg'
 import Instagram from '../../assets/svg/instagram.svg'
 import LinkedIn from '../../assets/svg/linked-in.svg'
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
   return (
     <footer>
       <Container className="logo-pos">
@@ -19,17 +19,17 @@ export const Footer = () => {
 
       <Container>
         <div className="d-flex justify-content-center">
-          <Link to="members" className="tag">
+          <Link to="about" className="tag">
             {' '}
             {/* Define the linked page */}
             About
           </Link>
-          <Link to="members" className="tag">
+          <Link to="teams" className="tag">
             {' '}
             {/* Define the linked page */}
             Teams
           </Link>
-          <Link to="members" className="tag">
+          <Link to="events" className="tag">
             {' '}
             {/* Define the linked page */}
             Events
@@ -41,20 +41,39 @@ export const Footer = () => {
 
       <Container className="icon-pos">
         <div className="d-flex justify-content-center">
-          <Link to="members" className="icon-tag">
+          {/* to-do note: make sure to open in new tab */}
+          <Link
+            to="https://gdsc.community.dev/waseda-university/"
+            className="icon-tag"
+          >
             {' '}
-            {/* Define the linked page */}
-            <img src={Google} alt="" />
+            { /* The GDSC Waseda section in Google's DSC website */ }
+            <img
+              src={Google}
+              alt="The GDSC Waseda section in Google's DSC website"
+            />
           </Link>
-          <Link to="members" className="icon-tag">
+          <Link
+            to="https://www.instagram.com/gdsc_waseda/"
+            className="icon-tag"
+          >
             {' '}
-            {/* Define the linked page */}
-            <img src={Instagram} alt="" />
+            {/* The link to GDSC Waseda Instagram account */}
+            <img
+              src={Instagram}
+              alt="The link to GDSC Waseda Instagram account"
+            />
           </Link>
-          <Link to="members" className="icon-tag">
+          <Link
+            to="https://www.linkedin.com/company/google-dsc-waseda-university"
+            className="icon-tag"
+          >
             {' '}
-            {/* Define the linked page */}
-            <img src={LinkedIn} alt="" />
+            {/* The link to GDSC Waseda LinkedIn account */}
+            <img
+              src={LinkedIn}
+              alt="The link to GDSC Waseda LinkedIn account"
+            />
           </Link>
         </div>
       </Container>

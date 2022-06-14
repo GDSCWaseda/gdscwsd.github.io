@@ -37,6 +37,7 @@ function App(): JSX.Element {
         <Route path="/team/marketing" element={<MarketingTeamPage />} />
         <Route path="/team/outreach" element={<OutreachTeamPage />} />
         <Route path="/team/project" element={<ProjectTeamPage />} />
+        {/* <Route path="/*" element={<404Page />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
