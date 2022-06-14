@@ -8,6 +8,15 @@ import MembersCard from '../components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
+
+// interface member {
+//   firstName: string
+//   lastName?: string
+//   photo_link?: string = placeholder.jpg
+//}
+
+// interface leader {extend member}
+
 export const TeamPage: React.FC = () => {
   const card: { team: string } = {
     team: 'TeamPage'
