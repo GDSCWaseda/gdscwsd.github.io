@@ -27,7 +27,8 @@
     "test": "craco test",
     "eject": "craco eject",
     "format": "prettier --write .",
-    "lint": "eslint src --ext .tsx,.ts,.js"
+    "lint": "eslint src --ext .tsx,.ts,.js",
+    "lint:prettier": "prettier --check ."
   },
   "browserslist": {
     "production": [
