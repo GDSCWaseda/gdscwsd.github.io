@@ -22,7 +22,7 @@ export const NavigationBar = (): JSX.Element => {
             <Nav className="ms-auto">
               <Nav.Link href="home">Home</Nav.Link>
               <Nav.Link href="link">About</Nav.Link>
-              <Nav.Link href="team">Team</Nav.Link>
+              <Nav.Link href="teams">Teams</Nav.Link>
               <Nav.Link href="events">Events</Nav.Link>
               <Button variant="outline-dark" className="join-btn">
                 <Nav.Link href="form">Join Us</Nav.Link>

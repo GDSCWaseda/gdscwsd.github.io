@@ -47,7 +47,7 @@ export const Footer = (): JSX.Element => {
             className="icon-tag"
           >
             {' '}
-            { /* The GDSC Waseda section in Google's DSC website */ }
+            {/* The GDSC Waseda section in Google's DSC website */}
             <img
               src={Google}
               alt="The GDSC Waseda section in Google's DSC website"

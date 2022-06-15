@@ -1,20 +1,20 @@
-import '../TeamPage.css'
+import '../TeamsPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import MainCard from '../../components/Cards/MainCard/MainCard'
-import Image from '../../assets/img/placeholder.jpeg'
-import MembersCard from '../../components/Cards/MembersCard/MembersCard'
+import MainCard from '@components/Cards/MainCard/MainCard'
+import Image from '@assets/img/placeholder.jpeg'
+import MembersCard from '@components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-export const EventTeamPage = () => {
+export const ProjectTeamPage = () => {
   const card = {
-    team: 'EventTeamPage'
+    team: 'ProjectTeamPage'
   }
 
   const members = {
-    teamName: 'Event Team',
+    teamName: 'Project Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },
@@ -63,4 +63,4 @@ export const EventTeamPage = () => {
   )
 }
 
-export default EventTeamPage
+export default ProjectTeamPage

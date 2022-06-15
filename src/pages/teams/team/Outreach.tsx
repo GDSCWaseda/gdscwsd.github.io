@@ -1,28 +1,20 @@
-import './TeamPage.css'
+import '../TeamsPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import MainCard from '../components/Cards/MainCard/MainCard'
-import Image from '../assets/img/placeholder.jpeg'
-import MembersCard from '../components/Cards/MembersCard/MembersCard'
+import MainCard from '@components/Cards/MainCard/MainCard'
+import Image from '@assets/img/placeholder.jpeg'
+import MembersCard from '@components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-// interface member {
-//   firstName: string
-//   lastName?: string
-//   photo_link?: string = placeholder.jpg
-// }
-
-// interface leader {extend member}
-
-export const TeamPage: React.FC = () => {
-  const card: { team: string } = {
-    team: 'TeamPage'
+export const OutreachTeamPage = () => {
+  const card = {
+    team: 'OutreachTeamPage'
   }
 
   const members = {
-    teamName: '__ Team',
+    teamName: 'Outreach Team',
     leader: { name: 'FirstName LastName' },
     member: [
       { name: 'FirstName LastName' },
@@ -71,4 +63,4 @@ export const TeamPage: React.FC = () => {
   )
 }
 
-export default TeamPage
+export default OutreachTeamPage
