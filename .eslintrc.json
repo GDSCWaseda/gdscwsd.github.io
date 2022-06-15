@@ -51,16 +51,34 @@
     ]
   },
   "settings": {
-    "import/extensions": [".js",".ts",".tsx"],
+    "import/extensions": [".js", ".ts", ".tsx"],
     "import/parsers": {
-      "@typescript-eslint/parser": [".js",".ts",".tsx"]
+      "@typescript-eslint/parser": [".js", ".ts", ".tsx"]
     },
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "sibling"],
+          "object",
+          "type",
+          "index"
+        ],
+        "newlines-between": "always", // グループ毎にで改行を入れる
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "alphabetize": {
+          "order": "asc", // 昇順にソート
+          "caseInsensitive": true // 小文字大文字を区別する
+        }
+      }
+    ],
     "import/resolver": {
       "typescript": {},
       "alias": {
-        "map": [
-          ["~", "./"]
-        ],
+        "map": [["~", "./"]],
         "extensions": [".ts", ".js", ".json"]
       },
       "node": {
