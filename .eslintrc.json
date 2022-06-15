@@ -19,6 +19,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json",
+    "tsconfigRootDir": "./",
     "ecmaFeatures": {
       "jsx": true
     },
@@ -50,7 +51,12 @@
     ]
   },
   "settings": {
+    "import/extensions": [".js",".ts",".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".js",".ts",".tsx"]
+    },
     "import/resolver": {
+      "typescript": {},
       "alias": {
         "map": [
           ["~", "./"]
