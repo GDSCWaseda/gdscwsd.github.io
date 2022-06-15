@@ -6,11 +6,11 @@ react-router-dom v6 から、講義中のバージョンとは以下の箇所が
 4. "component={ コンポーネント名 }"→"element={ < コンポーネント名 /> }"
 */
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import NavigationBar from '@components/NavigationBar/NavigationBar'
-import Footer from '@components/Footer/Footer'
-import { MembersPage } from '@pages/members/MembersPage'
+import NavigationBar from 'components/NavigationBar/NavigationBar'
+import Footer from 'components/Footer/Footer'
+import { MembersPage } from 'pages/members/MembersPage'
 import React from 'react'
-import TeamPage from '@pages/teams/TeamsPage'
+import TeamPage from 'pages/teams/TeamsPage'
 import {
   BackendTeamPage,
   EducationTeamPage,
@@ -20,7 +20,7 @@ import {
   MarketingTeamPage,
   OutreachTeamPage,
   ProjectTeamPage
-} from '@pages/teams/team/index'
+} from 'pages/teams/team/index'
 
 function App(): JSX.Element {
   return (

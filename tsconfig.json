@@ -28,15 +28,8 @@
     "module": "commonjs" /* Specify what module code is generated. */,
     // "rootDir": "src" /* Specify the root folder within your source files. */,
     //"sourceMap": true,
-    //"moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
-    "baseUrl": "./" /* Specify the base directory to resolve non-relative module names. */,
-    "paths": {
-      "~/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"],
-      "@pages/*": ["src/pages/*"]
-    },
-    //"paths": {},
+    "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+    //"baseUrl": "./" /* Specify the base directory to resolve non-relative module names. */,
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
@@ -108,6 +101,7 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["./**/*"],
+  "include": ["src"],
+  "extends": "./tsconfig.paths.json",
   "exclude": ["node_modules"]
 }
