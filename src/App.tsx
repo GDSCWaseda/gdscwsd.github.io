@@ -27,6 +27,9 @@ function App(): JSX.Element {
     <BrowserRouter>
       <NavigationBar />
       <Routes>
+        {/* Placeholder for home and about */}
+        {/* <Route paths={["/", "/home"]} element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} /> */}
         <Route path="/teams" element={<TeamPage />} />
         <Route path="/members" element={<MembersPage />} />
         <Route path="/team/backend" element={<BackendTeamPage />} />
