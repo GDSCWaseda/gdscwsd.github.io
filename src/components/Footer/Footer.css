@@ -25,7 +25,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 .icon-pos {
