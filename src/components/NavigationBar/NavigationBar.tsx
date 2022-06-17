@@ -6,7 +6,7 @@ import { Container, Nav } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
 import Navbar from 'react-bootstrap/Navbar'
 import React from 'react'
-import logo from '../../assets/svg/logo.svg'
+import logo from 'assets/svg/logo.svg'
 
 export const NavigationBar = (): JSX.Element => {
   return (

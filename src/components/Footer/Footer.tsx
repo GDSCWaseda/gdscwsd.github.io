@@ -3,10 +3,10 @@ import './Footer.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
-import logo from '../../assets/svg/logo.svg'
-import Google from '../../assets/svg/google.svg'
-import Instagram from '../../assets/svg/instagram.svg'
-import LinkedIn from '../../assets/svg/linked-in.svg'
+import logo from 'assets/svg/logo.svg'
+import Google from 'assets/svg/google.svg'
+import Instagram from 'assets/svg/instagram.svg'
+import LinkedIn from 'assets/svg/linked-in.svg'
 
 export const Footer = (): JSX.Element => {
   return (
