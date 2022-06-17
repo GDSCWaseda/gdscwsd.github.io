@@ -7,32 +7,98 @@ import Image from 'assets/img/placeholder.jpeg'
 import MembersCard from 'components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
+import { MainCardProps, MembersCardProps } from '~/types/components'
 
 export const EducationTeamPage = () => {
-  const card = {
-    team: 'EducationTeamPage'
+  const card: MainCardProps = {
+    teamName: 'EducationTeamPage',
+    explanation:
+      '"We must hold our organizations accountable where they control the doors by demanding clarity and tranparency around succession planning." - Ruth Porat, CFO at Alptha'
   }
 
-  const members = {
+  const teamMembers: MembersCardProps = {
     teamName: 'Education Team',
-    leader: { name: 'FirstName LastName' },
+    leader: {
+      firstName: 'FirstName',
+      lastName: 'LastName',
+      photo_link: ''
+    },
     member: [
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' }
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      }
     ]
   }
   return (
@@ -58,7 +124,7 @@ export const EducationTeamPage = () => {
         </Row>
       </Container>
 
-      <MembersCard props={members} />
+      <MembersCard props={teamMembers} />
     </div>
   )
 }

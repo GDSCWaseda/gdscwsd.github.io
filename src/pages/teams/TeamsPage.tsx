@@ -8,39 +8,98 @@ import MembersCard from 'components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 
-// interface member {
-//   firstName: string
-//   lastName?: string
-//   photo_link?: string = placeholder.jpg
-// }
-
-// interface leader {extend member}
+import { MainCardProps, MembersCardProps } from '~/types/components'
 
 export const TeamPage: React.FC = () => {
-  const card: { team: string } = {
-    team: 'TeamPage'
+  const card: MainCardProps = {
+    teamName: 'TeamPage',
+    explanation:
+      '"We must hold our organizations accountable where they control the doors by demanding clarity and tranparency around succession planning." - Ruth Porat, CFO at Alptha'
   }
 
-  const members = {
+  const teamMembers: MembersCardProps = {
     teamName: '__ Team',
-    leader: { name: 'FirstName LastName' },
+    leader: {
+      firstName: 'FirstName',
+      lastName: 'LastName',
+      photo_link: ''
+    },
     member: [
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' },
-      { name: 'FirstName LastName' }
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      },
+      {
+        firstName: 'FirstName',
+        lastName: 'LastName',
+        photo_link: ''
+      }
     ]
   }
   return (
@@ -66,7 +125,7 @@ export const TeamPage: React.FC = () => {
         </Row>
       </Container>
 
-      <MembersCard props={members} />
+      <MembersCard props={teamMembers} />
     </div>
   )
 }

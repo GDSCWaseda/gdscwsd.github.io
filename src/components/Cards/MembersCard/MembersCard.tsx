@@ -3,24 +3,18 @@ import './MembersCard.css'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Image from '../../../assets/img/placeholder.jpeg'
+import Image from 'assets/img/placeholder.jpeg'
 import { Link } from 'react-router-dom'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
-
-interface MembersCardProps {
-  teamName: string
-  leader: {
-    name: string
-    // firstname: string,
-    // lastname: string
-  }
-  member: Array<{ name: string }>
-}
+import { MembersCardProps, MemberType } from '~/types/components'
 
 export const MembersCard: React.FC<{ props: MembersCardProps }> = ({
   props
 }) => {
+  function getImage(member: MemberType) {
+    return member.photo_link !== '' ? member.photo_link : Image
+  }
   return (
     <div>
       <h1 className="title">Members</h1>
@@ -30,7 +24,9 @@ export const MembersCard: React.FC<{ props: MembersCardProps }> = ({
           <Card className="card-frame col-md-auto ">
             <Card.Img id="card-img" variant="top" src={Image} />
             <Card.Body>
-              <Card.Title id="title">{props.leader.name} </Card.Title>
+              <Card.Title id="title">
+                {props.leader.firstName} {props.leader.lastName}
+              </Card.Title>
               <Card.Text></Card.Text>
             </Card.Body>
           </Card>
@@ -44,9 +40,15 @@ export const MembersCard: React.FC<{ props: MembersCardProps }> = ({
             <Col key={index}>
               <Link to="members">
                 <Card className="card-frame mx-auto">
-                  <Card.Img id="card-img" variant="top" src={Image} />
+                  <Card.Img
+                    id="card-img"
+                    variant="top"
+                    src={getImage(member)}
+                  />
                   <Card.Body>
-                    <Card.Title id="title">{member.name}</Card.Title>
+                    <Card.Title id="title">
+                      {member.firstName} {member.lastName}
+                    </Card.Title>
                     <Card.Text></Card.Text>
                   </Card.Body>
                 </Card>
