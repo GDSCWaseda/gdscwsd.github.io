@@ -7,7 +7,7 @@ import LogoLeft from 'assets/svg/logo-left.svg'
 import LogoRight from 'assets/svg/logo-right.svg'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
-import { MainCardProps } from '~/types/components'
+import { MainCardProps } from '~/types/index'
 
 export const MainCard: React.FC<{ props: MainCardProps }> = ({ props }) => {
   return (

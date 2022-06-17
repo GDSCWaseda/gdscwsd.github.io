@@ -7,7 +7,7 @@ import Image from 'assets/img/placeholder.jpeg'
 import MembersCard from 'components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
-import { MainCardProps, MembersCardProps } from '~/types/components'
+import { MainCardProps, MembersCardProps } from '~/types/index'
 
 export const FinanceTeamPage = () => {
   const card: MainCardProps = {

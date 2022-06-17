@@ -7,7 +7,7 @@ import Image from 'assets/img/placeholder.jpeg'
 import { Link } from 'react-router-dom'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
-import { MembersCardProps, MemberType } from '~/types/components'
+import { MembersCardProps, MemberType } from '~/types/index'
 
 export const MembersCard: React.FC<{ props: MembersCardProps }> = ({
   props
