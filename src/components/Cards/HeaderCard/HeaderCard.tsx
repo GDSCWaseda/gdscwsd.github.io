@@ -1,4 +1,4 @@
-import './MainCard.css'
+import './HeaderCard.css'
 
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
@@ -7,9 +7,9 @@ import LogoLeft from 'assets/svg/logo-left.svg'
 import LogoRight from 'assets/svg/logo-right.svg'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
-import { MainCardProps } from '~/types/index'
+import { HeaderCardProps } from '~/types/index'
 
-export const MainCard: React.FC<{ props: MainCardProps }> = ({ props }) => {
+export const HeaderCard: React.FC<{ props: HeaderCardProps }> = ({ props }) => {
   return (
     <div id="main-card">
       <Card className="main-card">
@@ -33,4 +33,4 @@ export const MainCard: React.FC<{ props: MainCardProps }> = ({ props }) => {
   )
 }
 
-export default MainCard
+export default HeaderCard

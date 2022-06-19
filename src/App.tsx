@@ -8,10 +8,10 @@ react-router-dom v6 から、講義中のバージョンとは以下の箇所が
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavigationBar from 'components/NavigationBar/NavigationBar'
 import Footer from 'components/Footer/Footer'
-import { MembersPage } from 'pages/members/MembersPage'
 import React from 'react'
-import TeamPage from 'pages/teams/TeamsPage'
 import {
+  AboutPage,
+  TeamPage,
   BackendTeamPage,
   EducationTeamPage,
   EventTeamPage,
@@ -20,7 +20,7 @@ import {
   MarketingTeamPage,
   OutreachTeamPage,
   ProjectTeamPage
-} from 'pages/teams/team/index'
+} from 'pages/index'
 
 function App(): JSX.Element {
   return (
@@ -28,10 +28,9 @@ function App(): JSX.Element {
       <NavigationBar />
       <Routes>
         {/* Placeholder for home and about */}
-        {/* <Route paths={["/", "/home"]} element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} /> */}
+        {/* <Route paths={["/", "/home"]} element={<HomePage />} /> */}
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/teams" element={<TeamPage />} />
-        <Route path="/members" element={<MembersPage />} />
         <Route path="/team/backend" element={<BackendTeamPage />} />
         <Route path="/team/event" element={<EventTeamPage />} />
         <Route path="/team/education" element={<EducationTeamPage />} />

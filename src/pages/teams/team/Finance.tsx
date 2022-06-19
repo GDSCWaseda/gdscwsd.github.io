@@ -2,16 +2,16 @@ import '../TeamsPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import MainCard from 'components/Cards/MainCard/MainCard'
+import HeaderCard from 'components/Cards/HeaderCard/HeaderCard'
 import Image from 'assets/img/placeholder.jpeg'
 import MembersCard from 'components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
-import { MainCardProps, MembersCardProps } from '~/types/index'
+import { HeaderCardProps, MembersCardProps } from '~/types/index'
 
-export const FinanceTeamPage = () => {
-  const card: MainCardProps = {
-    teamName: 'FinanceTeamPage',
+export const FinanceTeamPage: React.FC = () => {
+  const card: HeaderCardProps = {
+    teamName: 'FinanceTeamPage: React.FC',
     explanation:
       '"We must hold our organizations accountable where they control the doors by demanding clarity and tranparency around succession planning." - Ruth Porat, CFO at Alptha'
   }
@@ -103,7 +103,7 @@ export const FinanceTeamPage = () => {
   }
   return (
     <div>
-      <MainCard props={card} />
+      <HeaderCard props={card} />
       <Container>
         <Row lg={2} className="py-5">
           <Col className="d-flex">

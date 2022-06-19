@@ -11,7 +11,7 @@ export interface MembersCardProps {
   member: Array<MemberType>
 }
 
-export interface MainCardProps {
+export interface HeaderCardProps {
   teamName: string
   explanation: string
 }
