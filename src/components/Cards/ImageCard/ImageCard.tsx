@@ -41,7 +41,7 @@ export const ImageCard: React.FC<{
               </Typography>
               {props.content.split('\n').map((text, key) => (
                 <Typography
-                  variant="body2"
+                  gutterBottom
                   color="text.secondary"
                   align="left"
                   key={key}
@@ -49,7 +49,6 @@ export const ImageCard: React.FC<{
                   {text}
                 </Typography>
               ))}
-
               {children}
             </Container>
           </Box>

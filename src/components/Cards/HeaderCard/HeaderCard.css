@@ -1,8 +1,15 @@
 .header-card {
-  height: 400px;
+  min-height: 200px;
+  padding: 0 40px;
   background-color: lightgrey;
   justify-content: center;
 }
+@media(min-width: 790px)   {
+  .header-card {
+    height: 350px;
+  }
+}
+
 .header-card__header-title {
   text-align: center;
 }
