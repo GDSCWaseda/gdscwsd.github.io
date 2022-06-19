@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import Button from 'react-bootstrap/Button'
 
 import ImageCard from 'components/Cards/ImageCard/ImageCard'
 import HeaderCard from 'components/Cards/HeaderCard/HeaderCard'
@@ -30,11 +30,11 @@ export const AboutPage: React.FC = () => {
       <HeaderCard props={card} />
       <ImageCard props={imageCard}>
         <Stack spacing={2} direction="row" padding={2}>
-          <Button variant="outlined">
+          <Button variant="outline-dark" className="button">
             <Link to='/teams'>Teams</Link>
           </Button>
           {/* TODO: remove disabled when Event Page is released */}
-          <Button variant="outlined" disabled>
+          <Button variant="outline-dark" className="button" disabled>
             <Link to='/events'>Events</Link>
           </Button>
         </Stack>
