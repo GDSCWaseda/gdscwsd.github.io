@@ -12,8 +12,9 @@ import { HeaderCardProps, MembersCardProps } from '~/types/index'
 
 export const TeamPage: React.FC = () => {
   const card: HeaderCardProps = {
-    teamName: 'Our Teams',
-    explanation:
+    headTitle: '',
+    title: 'Our Teams',
+    content:
       '“Alone  we can do so little; together we can do so much.”\n~ Helen Keller'
   }
 

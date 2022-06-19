@@ -11,8 +11,9 @@ import { HeaderCardProps, MembersCardProps } from '~/types/index'
 
 export const FinanceTeamPage: React.FC = () => {
   const card: HeaderCardProps = {
-    teamName: 'FinanceTeamPage: React.FC',
-    explanation:
+    headTitle: '',
+    title: 'FinanceTeamPage',
+    content:
       '"We must hold our organizations accountable where they control the doors by demanding clarity and tranparency around succession planning." - Ruth Porat, CFO at Alptha'
   }
 

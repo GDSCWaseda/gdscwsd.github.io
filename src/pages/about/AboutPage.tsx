@@ -12,9 +12,9 @@ import { HeaderCardProps, ImageCardProps } from '~/types/index'
 
 export const AboutPage: React.FC = () => {
   const card: HeaderCardProps = {
-    teamName: 'About Us',
-    explanation:
-      "Waseda University's chapter of the Google Developer Student Club"
+    headTitle: '',
+    title: 'About Us',
+    content: "Waseda University's chapter of the Google Developer Student Club"
   }
 
   const imageCard: ImageCardProps = {

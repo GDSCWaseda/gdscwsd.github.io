@@ -12,8 +12,9 @@ export interface MembersCardProps {
 }
 
 export interface HeaderCardProps {
-  teamName: string
-  explanation: string
+  headTitle: string
+  title: string
+  content: string
 }
 
 export interface ImageCardProps {

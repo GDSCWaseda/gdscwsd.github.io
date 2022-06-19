@@ -13,21 +13,21 @@ export const HeaderCard: React.FC<{ props: HeaderCardProps }> = ({ props }) => {
   return (
     <div id="main-card">
       <Card className="main-card">
-        <Card.Title className="card-title">GDSC Waseda</Card.Title>
+        <Card.Title className="card-title">{props.headTitle}</Card.Title>
         <Container>
           <Row className="justify-content-center">
             <Col xs="auto">
               <img src={LogoLeft} className="logo-left" alt="" />
             </Col>
             <Col xs="auto">
-              <Card.Text className="team-name">{props.teamName}</Card.Text>
+              <Card.Text className="team-name">{props.title}</Card.Text>
             </Col>
             <Col xs="auto">
               <img src={LogoRight} className="logo-right" alt="" />
             </Col>
           </Row>
         </Container>
-        {props.explanation.split('\n').map((text, key) => (
+        {props.content.split('\n').map((text, key) => (
           <p key={key}>{text}</p>
         ))}
       </Card>
