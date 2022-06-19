@@ -15,3 +15,10 @@ export interface HeaderCardProps {
   teamName: string
   explanation: string
 }
+
+export interface ImageCardProps {
+  title: string
+  content: string
+  image: string
+  imagePosition: string
+}
