@@ -21,6 +21,7 @@ import {
   OutreachTeamPage,
   ProjectTeamPage
 } from 'pages/teams/team/index'
+import HomePage from 'pages/main/HomePage'
 
 function App(): JSX.Element {
   return (
@@ -28,9 +29,9 @@ function App(): JSX.Element {
       <NavigationBar />
       <Routes>
         {/* Placeholder for home and about */}
-        {/* <Route paths={["/", "/home"]} element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} /> */}
-        <Route path="/teams" element={<TeamPage />} />
+        <Route path="/home/" element={<HomePage />} />
+        {/* <Route path="/about" element={<AboutPage />} /> */}
+        < Route path="/teams" element={< TeamPage />} />
         <Route path="/members" element={<MembersPage />} />
         <Route path="/team/backend" element={<BackendTeamPage />} />
         <Route path="/team/event" element={<EventTeamPage />} />
