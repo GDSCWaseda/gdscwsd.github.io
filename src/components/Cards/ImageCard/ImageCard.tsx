@@ -18,46 +18,43 @@ export const ImageCard: React.FC<{
   const Direction = props.imagePosition === 'left' ? 'row' : 'row-reverse'
 
   return (
-    <Box>
-      <Container>
-        <Grid
-          container
-          spacing={2}
-          direction={Direction}
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Grid item sm="auto">
-            <img src={Image} />
-          </Grid>
-          <Grid item sm="auto">
-            <Box sx={{ width: 400, border: 0 }}>
-              <Container>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="div"
-                  align="center"
-                >
-                  {props.title}
-                </Typography>
-                {props.content.split('\n').map((text, key) => (
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    align="left"
-                    key={key}
-                  >
-                    {text}
-                  </Typography>
-                ))}
-
-                {children}
-              </Container>
-            </Box>
-          </Grid>
+    <Box padding={3}>
+      <Grid
+        container
+        direction={Direction}
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item sm="auto">
+          <img src={Image} height="auto" width="100%" max-width="350px" />
         </Grid>
-      </Container>
+        <Grid item sm="auto">
+          <Box padding={2} sx={{ maxWidth: 430, border: 0 }}>
+            <Container>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                align="center"
+              >
+                {props.title}
+              </Typography>
+              {props.content.split('\n').map((text, key) => (
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  align="left"
+                  key={key}
+                >
+                  {text}
+                </Typography>
+              ))}
+
+              {children}
+            </Container>
+          </Box>
+        </Grid>
+      </Grid>
     </Box>
   )
 }
