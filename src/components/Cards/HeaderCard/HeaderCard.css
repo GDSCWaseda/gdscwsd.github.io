@@ -4,7 +4,7 @@
   background-color: lightgrey;
   justify-content: center;
 }
-@media(min-width: 790px)   {
+@media (min-width: 790px) {
   .header-card {
     height: 350px;
   }
@@ -15,14 +15,15 @@
 }
 .header-card__title {
   text-align: center;
-  font-size: max(4vw,30px);
+  font-size: max(4vw, 30px);
 }
 .header-card__container {
   width: 100%;
   padding: 10px;
 }
 
-.header-card__logo-right,.header-card__logo-left {
+.header-card__logo-right,
+.header-card__logo-left {
   width: 100%;
   min-width: 20px;
   max-width: 60px;
@@ -30,5 +31,5 @@
 .header-card__contents {
   padding-top: 10px;
   text-align: center;
-  font-size: max(1.5vw,15px);
+  font-size: max(1.5vw, 15px);
 }
