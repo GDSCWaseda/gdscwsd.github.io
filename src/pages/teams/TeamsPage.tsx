@@ -12,9 +12,9 @@ import { HeaderCardProps, MembersCardProps } from '~/types/index'
 
 export const TeamPage: React.FC = () => {
   const card: HeaderCardProps = {
-    teamName: 'TeamPage',
+    teamName: 'Our Teams',
     explanation:
-      '"We must hold our organizations accountable where they control the doors by demanding clarity and tranparency around succession planning." - Ruth Porat, CFO at Alptha'
+      '“Alone  we can do so little; together we can do so much.”\n~ Helen Keller'
   }
 
   const teamMembers: MembersCardProps = {

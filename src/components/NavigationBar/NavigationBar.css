@@ -8,14 +8,16 @@
   margin-right: 15px;
 }
 
-.nav-link {
+.nav-item {
   margin: 0 10px;
+  align-self: center;
 }
-.join-btn {
-  padding: 0;
+
+.button {
+  padding: 10px;
   width: 110px;
   border-radius: 25px;
 }
-button.join-btn.btn.btn-outline-dark:hover a {
+button.button.btn.btn-outline-dark:hover a {
   color: white;
 }

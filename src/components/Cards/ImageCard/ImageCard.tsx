@@ -10,9 +10,12 @@ import Typography from '@mui/material/Typography'
 import { ImageCardProps } from '~/types/index'
 import React from 'react'
 
-export const ImageCard: React.FC<{ children: React.ReactNode, props: ImageCardProps }> = ({ children, props }) => {
+export const ImageCard: React.FC<{
+  children: React.ReactNode
+  props: ImageCardProps
+}> = ({ children, props }) => {
   const Image = require(`assets/img/${props.image}`)
-  const Direction = props.imagePosition === "left" ? "row" : "row-reverse"
+  const Direction = props.imagePosition === 'left' ? 'row' : 'row-reverse'
 
   return (
     <Box>
@@ -48,7 +51,7 @@ export const ImageCard: React.FC<{ children: React.ReactNode, props: ImageCardPr
                     {text}
                   </Typography>
                 ))}
-                
+
                 {children}
               </Container>
             </Box>

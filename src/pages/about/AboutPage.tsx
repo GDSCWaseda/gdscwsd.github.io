@@ -3,18 +3,18 @@ import './AboutPage.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Stack from '@mui/material/Stack';
+import Stack from '@mui/material/Stack'
 import Button from 'react-bootstrap/Button'
 
 import ImageCard from 'components/Cards/ImageCard/ImageCard'
 import HeaderCard from 'components/Cards/HeaderCard/HeaderCard'
 import { HeaderCardProps, ImageCardProps } from '~/types/index'
 
-
 export const AboutPage: React.FC = () => {
   const card: HeaderCardProps = {
     teamName: 'About Us',
-    explanation: 'About Page Explanation'
+    explanation:
+      "Waseda University's chapter of the Google Developer Student Club"
   }
 
   const imageCard: ImageCardProps = {
@@ -22,7 +22,7 @@ export const AboutPage: React.FC = () => {
     content:
       'Google Developer Student Clubs are university-based community groups supported by Google Developers intending to empower student developers and strengthen their leadership skills\nHere at GDSC Waseda, by collaborating with Google, we will organize many exciting events such as speaker sessions, hackathons, introductory hands-on workshops, study sessions, and so on',
     image: 'group-highfive.png',
-    imagePosition: 'left',
+    imagePosition: 'left'
   }
 
   return (
@@ -31,11 +31,11 @@ export const AboutPage: React.FC = () => {
       <ImageCard props={imageCard}>
         <Stack spacing={2} direction="row" padding={2}>
           <Button variant="outline-dark" className="button">
-            <Link to='/teams'>Teams</Link>
+            <Link to="/teams">Teams</Link>
           </Button>
           {/* TODO: remove disabled when Event Page is released */}
           <Button variant="outline-dark" className="button" disabled>
-            <Link to='/events'>Events</Link>
+            <Link to="/events">Events</Link>
           </Button>
         </Stack>
       </ImageCard>

@@ -1,12 +1,12 @@
 import './HeaderCard.css'
 
-import Card from 'react-bootstrap/Card'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
+import React from 'react'
+
+import { Col, Row, Container, Card } from 'react-bootstrap'
+
 import LogoLeft from 'assets/svg/logo-left.svg'
 import LogoRight from 'assets/svg/logo-right.svg'
-import React from 'react'
-import Row from 'react-bootstrap/Row'
+
 import { HeaderCardProps } from '~/types/index'
 
 export const HeaderCard: React.FC<{ props: HeaderCardProps }> = ({ props }) => {
@@ -27,7 +27,9 @@ export const HeaderCard: React.FC<{ props: HeaderCardProps }> = ({ props }) => {
             </Col>
           </Row>
         </Container>
-        <p>{props.explanation}</p>
+        {props.explanation.split('\n').map((text, key) => (
+          <p key={key}>{text}</p>
+        ))}
       </Card>
     </div>
   )
