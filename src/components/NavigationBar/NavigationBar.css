@@ -14,6 +14,12 @@
   align-self: center;
 }
 
+@media (max-width: 790px) {
+  .nav-item {
+    margin-bottom: 5px;
+  }
+}
+
 .button {
   padding: 10px;
   width: 110px;

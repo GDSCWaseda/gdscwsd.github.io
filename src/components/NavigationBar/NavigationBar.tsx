@@ -35,7 +35,7 @@ export const NavigationBar = (): JSX.Element => {
                 <Link to="/events">Events</Link>
               </Nav.Item>
               <Nav.Item>
-                <Button variant="outline-dark" className="button">
+                <Button variant="outline-dark" disabled className="button">
                   <Link to="/forms">Join Us</Link>
                 </Button>
               </Nav.Item>

@@ -1,54 +1,25 @@
-.footer-logo {
-  min-width: 20px;
-  max-width: 40px;
-  height: auto;
-}
-
-.tag {
-  margin: 0 15px;
-}
-
-.icon-tag {
-  margin: 0 10px;
-}
-
-.logo-pos {
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
-.footer-logo {
-  /* height: 15%;
-  width: 15%; */
-}
-
 .footer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
+  width: 100%;
+  padding: 10px 15px 0px 15px;
 }
 
-.icon-pos {
-  padding-top: 10px;
-  padding-bottom: 50px;
+
+.footer__logo-container {
+  text-align: center;
+  padding: 10px;
 }
 
-.copy-right {
-  padding-top: 40px;
-  padding-bottom: 10px;
+.footer__logo-main {
+  width: 100%;
+  min-width: 20px;
+  max-width: 60px;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
+.footer__path-container {
+  text-align: center;
+  padding: 10px;
 }
 
-.footer-logo {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  /*This solves everything*/
+.footer__path-item {
+  padding: 10px;
 }
