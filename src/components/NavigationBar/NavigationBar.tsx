@@ -11,7 +11,7 @@ import logo from 'assets/svg/logo.svg'
 export const NavigationBar = (): JSX.Element => {
   return (
     <div className="header">
-      <Navbar bg="light" expand="lg" className="fixed-top">
+      <Navbar className="header__container">
         <Container fluid>
           <Navbar.Brand>
             <Link to="/">
