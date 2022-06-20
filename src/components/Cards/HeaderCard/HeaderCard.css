@@ -1,4 +1,6 @@
 .header-card {
+  border: 0px;
+  border-radius: 0px;
   min-height: 200px;
   padding: 0 40px;
   background-color: lightgrey;
