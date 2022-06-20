@@ -2,9 +2,8 @@ import './TeamsPage.css'
 
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import HeaderCard from 'components/Cards/HeaderCard/HeaderCard'
+import { HeaderCard, MembersCard } from 'components/Cards/index'
 import Image from 'assets/img/placeholder.jpeg'
-import MembersCard from 'components/Cards/MembersCard/MembersCard'
 import React from 'react'
 import Row from 'react-bootstrap/Row'
 

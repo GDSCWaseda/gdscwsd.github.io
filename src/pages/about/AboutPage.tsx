@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 import Stack from '@mui/material/Stack'
 import Button from 'react-bootstrap/Button'
 
-import ImageCard from 'components/Cards/ImageCard/ImageCard'
-import HeaderCard from 'components/Cards/HeaderCard/HeaderCard'
+import { ImageCard, HeaderCard } from 'components/Cards/index'
 import { HeaderCardProps, ImageCardProps } from '~/types/index'
 
 export const AboutPage: React.FC = () => {
