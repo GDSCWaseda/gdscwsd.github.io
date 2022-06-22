@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /*
 react-router-dom v6 から、講義中のバージョンとは以下の箇所が異なる
 1. "Router"→"BrowserRouter"
@@ -10,6 +11,7 @@ import NavigationBar from 'components/NavigationBar/NavigationBar'
 import Footer from 'components/Footer/Footer'
 import React from 'react'
 import {
+  ErrorPage,
   AboutPage,
   TeamPage,
   BackendTeamPage,
@@ -30,6 +32,21 @@ function App(): JSX.Element {
         {/* Placeholder for home and about */}
         {/* <Route paths={["/", "/home"]} element={<HomePage />} /> */}
         <Route path="/about" element={<AboutPage />} />
+        {/* TODO: Remove when Page is made */}
+        <Route path="/" element={<ErrorPage props={{ detail: 'dev' }} />} />
+        <Route
+          path="/teams"
+          element={<ErrorPage props={{ detail: 'dev' }} />}
+        />
+        <Route
+          path="/events"
+          element={<ErrorPage props={{ detail: 'dev' }} />}
+        />
+        <Route
+          path="/joinus"
+          element={<ErrorPage props={{ detail: 'dev' }} />}
+        />
+        {/* Under Construction
         <Route path="/teams" element={<TeamPage />} />
         <Route path="/team/backend" element={<BackendTeamPage />} />
         <Route path="/team/event" element={<EventTeamPage />} />
@@ -39,7 +56,8 @@ function App(): JSX.Element {
         <Route path="/team/marketing" element={<MarketingTeamPage />} />
         <Route path="/team/outreach" element={<OutreachTeamPage />} />
         <Route path="/team/project" element={<ProjectTeamPage />} />
-        {/* <Route path="/*" element={<404Page />} /> */}
+        <Route path="*" element={<ErrorPage props={{ detail: 'error' }} />} /> */}
+        <Route path="*" element={<ErrorPage props={{ detail: 'error' }} />} />
       </Routes>
       <Footer />
     </BrowserRouter>

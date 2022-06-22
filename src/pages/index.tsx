@@ -11,3 +11,6 @@ export { ProjectTeamPage } from './teams/team/Project'
 
 // About Page
 export { AboutPage } from './about/AboutPage'
+
+// Error Page
+export { ErrorPage } from './error/ErrorPage'

@@ -23,3 +23,9 @@ export interface ImageCardProps {
   image: string
   imagePosition: string
 }
+
+/* Pages */
+
+export interface ErrorPageProps {
+  detail: string | 'error' | 'dev'
+}
