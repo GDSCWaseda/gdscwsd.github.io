@@ -13,7 +13,9 @@ export const MembersCard: React.FC<{ props: MembersCardProps }> = ({
   props
 }) => {
   function getImage(member: MemberType) {
-    return member.photo_link !== '' ? member.photo_link : Image
+    return member.photo_link !== '' || member.photo_link !== undefined
+      ? member.photo_link
+      : Image
   }
   return (
     <div>
@@ -25,7 +27,8 @@ export const MembersCard: React.FC<{ props: MembersCardProps }> = ({
             <Card.Img id="card-img" variant="top" src={Image} />
             <Card.Body>
               <Card.Title id="title">
-                {props.leader.firstName} {props.leader.lastName}
+                {props.leader.firstName}{' '}
+                {props.leader.lastName !== undefined && props.leader.lastName}
               </Card.Title>
               <Card.Text></Card.Text>
             </Card.Body>

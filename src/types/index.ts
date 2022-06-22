@@ -1,8 +1,8 @@
 /* Cards */
 export interface MemberType {
   firstName: string
-  lastName: string
-  photo_link: string
+  lastName?: string
+  photo_link?: string
 }
 
 export interface MembersCardProps {
@@ -12,14 +12,14 @@ export interface MembersCardProps {
 }
 
 export interface HeaderCardProps {
-  headTitle: string
+  headTitle?: string
   title: string
-  content: string
+  content?: string
 }
 
 export interface ImageCardProps {
   title: string
-  content: string
+  content?: string
   image: string
   imagePosition: string
 }

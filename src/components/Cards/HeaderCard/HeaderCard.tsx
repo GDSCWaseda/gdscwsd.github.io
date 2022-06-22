@@ -12,9 +12,11 @@ import { HeaderCardProps } from '~/types/index'
 export const HeaderCard: React.FC<{ props: HeaderCardProps }> = ({ props }) => {
   return (
     <Card className="header-card">
-      <Card.Title className="header-card__header-title">
-        {props.headTitle}
-      </Card.Title>
+      {props.headTitle !== undefined && (
+        <Card.Title className="header-card__header-title">
+          {props.headTitle}
+        </Card.Title>
+      )}
       <div className="header-card__container">
         <Row>
           <Col xs={2} style={{ textAlign: 'end', alignSelf: 'center' }}>
@@ -28,11 +30,12 @@ export const HeaderCard: React.FC<{ props: HeaderCardProps }> = ({ props }) => {
           </Col>
         </Row>
       </div>
-      {props.content.split('\n').map((text, key) => (
-        <p key={key} className="header-card__contents">
-          {text}
-        </p>
-      ))}
+      {props.content !== undefined &&
+        props.content.split('\n').map((text, key) => (
+          <p key={key} className="header-card__contents">
+            {text}
+          </p>
+        ))}
     </Card>
   )
 }

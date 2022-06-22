@@ -38,16 +38,17 @@ export const ImageCard: React.FC<{
               >
                 {props.title}
               </Typography>
-              {props.content.split('\n').map((text, key) => (
-                <Typography
-                  gutterBottom
-                  color="text.secondary"
-                  align="left"
-                  key={key}
-                >
-                  {text}
-                </Typography>
-              ))}
+              {props.content !== undefined &&
+                props.content.split('\n').map((text, key) => (
+                  <Typography
+                    gutterBottom
+                    color="text.secondary"
+                    align="left"
+                    key={key}
+                  >
+                    {text}
+                  </Typography>
+                ))}
               {children}
             </Container>
           </Box>
