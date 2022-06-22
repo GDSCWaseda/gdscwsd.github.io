@@ -5,6 +5,7 @@
 }
 
 .image-icon__image-container {
+  text-align: -webkit-center;
 }
 
 .image-icon__image {
@@ -19,10 +20,12 @@
 
 .image-icon__title {
   padding: 5px;
+  font-weight: bold;
 }
 
 .image-icon__other {
   padding: 5px;
+  font-size: 13px;
 }
 
 .image-icon__image.s {
