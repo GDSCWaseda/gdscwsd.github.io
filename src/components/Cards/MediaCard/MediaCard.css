@@ -50,16 +50,19 @@
 .media-card__image.s,
 .media-card.s {
   max-width: 25vh;
+  min-width: 170px;
 }
 
 .media-card__image.m,
 .media-card.m {
   max-width: 30vh;
+  min-width: 200px;
 }
 
 .media-card__image.l,
 .media-card.l {
   max-width: 35vh;
+  min-width: 250px;
 }
 
 .media-card__image-container.s {
@@ -74,4 +77,23 @@
 .media-card__image-container.l {
   min-height: 30vh;
   min-width: 35vh;
+}
+
+.media-card__tags {
+  display: inline-flex;
+  margin-bottom: 15px;
+}
+
+.media-card__tag {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 1px solid;
+  border-radius: 50px;
+}
+.media-card__date {
+  margin-bottom: 10px;
+
+}
+.media-card__details {
+  margin-bottom: 10px;
 }

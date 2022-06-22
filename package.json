@@ -21,6 +21,7 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.1",
+    "storybook-preset-craco": "^0.0.6",
     "tspath": "^1.3.7",
     "typescript": "^4.7.3",
     "web-vitals": "^1.1.2"
@@ -32,7 +33,9 @@
     "eject": "craco eject",
     "format": "prettier --write .",
     "lint": "eslint src --ext .tsx,.ts,.js",
-    "lint:prettier": "prettier --check ."
+    "lint:prettier": "prettier --check .",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -47,8 +50,19 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/node-logger": "^6.5.9",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
@@ -62,9 +76,22 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "prettier": "^2.6.2",
+    "prop-types": "^15.8.1",
     "ts-loader": "^9.3.0",
     "tsconfig-paths": "^4.0.0",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   }
 }
