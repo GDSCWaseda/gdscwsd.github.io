@@ -1,19 +1,23 @@
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-var-requires */
-import './ImageCard.css'
+import 'components/Cards/ImageCard/ImageCard.css'
 
 import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 
-import { ImageCardProps } from '~/types/index'
 import React from 'react'
 
-export const ImageCard: React.FC<{
+const ImageCard: React.FC<{
   children?: React.ReactNode
-  props: ImageCardProps
-}> = ({ children, props }) => {
+  image: string
+  title: string
+  imagePosition: 'left' | 'right'
+  content: string
+}> = ({ children, ...props }) => {
   const Image = require(`assets/img/${props.image}`)
 
   return (
@@ -60,4 +64,32 @@ export const ImageCard: React.FC<{
   )
 }
 
-export default ImageCard
+const Template: ComponentStory<typeof ImageCard> = ({ children, ...args }) => (
+  <ImageCard {...args}>{children}</ImageCard>
+)
+
+export const MembersCard = Template.bind({})
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+MembersCard.args = {
+  title: 'Google Developer Student Clubs',
+  content:
+    'Google Developer Student Clubs are university-based community groups supported by Google Developers intending to empower student developers and strengthen their leadership skills\nHere at GDSC Waseda, by collaborating with Google, we will organize many exciting events such as speaker sessions, hackathons, introductory hands-on workshops, study sessions, and so on',
+  image: 'group-highfive.png',
+  imagePosition: 'left',
+  children: 'ADDITIONAL Components'
+}
+
+export default {
+  title: 'Cards/ImageCard',
+  component: ImageCard,
+  argTypes: {
+    title: { control: 'text' },
+    content: { control: 'text' },
+    image: { control: 'text' },
+    children: { control: 'text' },
+    imagePosition: {
+      options: ['left', 'right'],
+      control: { type: 'radio' }
+    }
+  }
+} as ComponentMeta<typeof ImageCard>

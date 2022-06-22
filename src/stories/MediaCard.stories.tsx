@@ -101,6 +101,5 @@ export default {
     title: { control: 'text' },
     open: { control: 'boolean' },
     canOpen: { control: 'boolean' }
-  },
-  parameters: { actions: { argTypesRegex: '^on.*' } }
+  }
 } as ComponentMeta<typeof MediaCard>

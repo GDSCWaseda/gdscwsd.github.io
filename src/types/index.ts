@@ -21,7 +21,7 @@ export interface ImageCardProps {
   title: string
   content?: string
   image: string
-  imagePosition: string
+  imagePosition: 'left' | 'right'
 }
 
 export interface MediaCardProps {
