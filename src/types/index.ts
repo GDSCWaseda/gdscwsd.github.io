@@ -28,6 +28,8 @@ export interface MediaCardProps {
   size: 's' | 'm' | 'l'
   title: string
   image?: string
+  open: boolean
+  canOpen: boolean
 }
 
 export interface ImageIconProps {

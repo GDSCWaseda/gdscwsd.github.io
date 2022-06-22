@@ -17,9 +17,17 @@
 .media-card__image {
 }
 
+.media-card__collapse {
+  float: right;
+}
+.media-card__collapse-container {
+  padding: 5px;
+}
+
 .media-card__detail-container {
   margin-top: 4px;
   padding: 5px 10px;
+  transition: width 600ms ease-out, height 600ms ease-out;
 }
 
 .media-card__title {

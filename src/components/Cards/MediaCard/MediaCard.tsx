@@ -2,8 +2,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import './MediaCard.css'
 
+import Collapse from '@mui/material/Collapse'
+import { ArrowDropDown, ArrowDropUp } from '@mui/icons-material'
+
 import { MediaCardProps } from '~/types/index'
-import React from 'react'
+import React, { useState } from 'react'
 
 export const MediaCard: React.FC<{
   children?: React.ReactNode
@@ -11,6 +14,10 @@ export const MediaCard: React.FC<{
 }> = ({ children, props }) => {
   const Image =
     props.image !== undefined ? require(`assets/img/${props.image}`) : null
+
+  const [open, setOpen] = useState(props.open)
+
+  const handleOnClick = () => setOpen(!open)
 
   return (
     <div className={`media-card ${props.size}`}>
@@ -21,13 +28,28 @@ export const MediaCard: React.FC<{
       ) : (
         <div className={`media-card__image-container ${props.size} none`} />
       )}
-      <div className="media-card__detail-container">
+      <div className="media-card__detail-container" onClick={handleOnClick}>
         {props.title !== undefined && (
-          <div className="media-card__title">{props.title}</div>
+          <>
+            {props.canOpen && (
+              <div className="media-card__collapse">
+                <div className="media-card__collapse-container">
+                  {children !== undefined && open ? (
+                    <ArrowDropUp />
+                  ) : (
+                    <ArrowDropDown />
+                  )}
+                </div>
+              </div>
+            )}
+            <div className="media-card__title">{props.title}</div>
+          </>
         )}
-        <div className="media-card__other">
-          {children !== undefined && children}
-        </div>
+        <Collapse in={props.canOpen && open} timeout="auto" unmountOnExit>
+          <div className={`media-card__other`}>
+            {children !== undefined && children}
+          </div>
+        </Collapse>
       </div>
     </div>
   )
