@@ -16,6 +16,10 @@
   font-size: 15px;
 }
 
+.feedback-form__container {
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
 .feedback-form__items {
   padding: 10px;
 }

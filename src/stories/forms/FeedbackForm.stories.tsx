@@ -1,12 +1,14 @@
 /* eslint-disable no-useless-escape */
-import './FeedbackForm.css'
+import 'components/Forms/FeedbackForm/FeedbackForm.css'
 
 import React, { useState } from 'react'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 
-export const FeedbackForm: React.FC = () => {
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+
+const FeedbackForm: React.FC = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -118,4 +120,13 @@ export const FeedbackForm: React.FC = () => {
   )
 }
 
-export default FeedbackForm
+const Template: ComponentStory<typeof FeedbackForm> = args => <FeedbackForm />
+
+export const Default = Template.bind({})
+Default.args = {}
+
+export default {
+  title: 'Forms/Feedback Form',
+  component: FeedbackForm,
+  argTypes: {}
+} as ComponentMeta<typeof FeedbackForm>
