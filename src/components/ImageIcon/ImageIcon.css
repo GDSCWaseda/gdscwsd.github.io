@@ -1,0 +1,57 @@
+.image-icon {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-icon__image-container {
+}
+
+.image-icon__image {
+  border: 8px solid;
+  border-radius: 100%;
+  background-color: #c4c4c4;
+}
+
+.image-icon__detail-container {
+  margin-top: 4px;
+}
+
+.image-icon__title {
+  padding: 5px;
+}
+
+.image-icon__other {
+  padding: 5px;
+}
+
+.image-icon__image.s {
+  height: 15vh;
+  width: 15vh;
+}
+
+.image-icon__image.m {
+  height: 20vh;
+  width: 20vh;
+}
+
+.image-icon__image.l {
+  height: 25vh;
+  width: 25vh;
+}
+
+.red {
+  color: #ea4335;
+}
+
+.blue {
+  color: #4285f4;
+}
+
+.green {
+  color: #36a852;
+}
+
+.yellow {
+  color: #fbbc04;
+}

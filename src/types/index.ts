@@ -24,6 +24,13 @@ export interface ImageCardProps {
   imagePosition: string
 }
 
+export interface ImageIconProps {
+  size: 's' | 'm' | 'l'
+  title?: string
+  color: 'yellow' | 'green' | 'blue' | 'red'
+  image?: string
+}
+
 /* Pages */
 
 export interface ErrorPageProps {
