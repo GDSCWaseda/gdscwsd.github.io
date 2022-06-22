@@ -1,14 +1,19 @@
-import './Footer.css'
+import 'components/Footer/Footer.css'
+
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-var-requires */
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, MemoryRouter } from 'react-router-dom'
 
 import logo from 'assets/svg/logo.svg'
 import Google from 'assets/svg/google.svg'
 import Instagram from 'assets/svg/instagram.svg'
 import LinkedIn from 'assets/svg/linked-in.svg'
 
-export const Footer = (): JSX.Element => {
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__logo-container">
@@ -57,4 +62,20 @@ export const Footer = (): JSX.Element => {
   )
 }
 
-export default Footer
+const Template: ComponentStory<typeof Footer> = _1 => <Footer />
+
+export const Default = Template.bind({})
+Default.args = {}
+
+export default {
+  title: 'Global Components/Footer',
+  component: Footer,
+  parameters: { actions: { argTypesRegex: '^on.*' } },
+  decorators: [
+    Story => (
+      <MemoryRouter>
+        <Story />
+      </MemoryRouter>
+    )
+  ]
+} as ComponentMeta<typeof Footer>
