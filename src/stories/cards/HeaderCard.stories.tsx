@@ -49,7 +49,7 @@ const Template: ComponentStory<typeof HeaderCard> = args => (
 
 export const DefaultCard = Template.bind({})
 DefaultCard.args = {
-  headTitle: '',
+  headTitle: 'GDSC Waseda',
   title: 'About Us',
   content: "Waseda University's chapter of the Google Developer Student Club"
 }
