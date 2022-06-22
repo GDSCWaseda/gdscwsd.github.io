@@ -30,7 +30,9 @@ export const ImageIcon: React.FC<{
         {props.title !== undefined && (
           <div className="image-icon__title">{props.title}</div>
         )}
-        <div className="image-icon__other">{children}</div>
+        <div className="image-icon__other">
+          {children !== undefined && children}
+        </div>
       </div>
     </div>
   )

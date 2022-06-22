@@ -11,7 +11,7 @@ import { ImageCardProps } from '~/types/index'
 import React from 'react'
 
 export const ImageCard: React.FC<{
-  children: React.ReactNode
+  children?: React.ReactNode
   props: ImageCardProps
 }> = ({ children, props }) => {
   const Image = require(`assets/img/${props.image}`)
@@ -49,7 +49,7 @@ export const ImageCard: React.FC<{
                     {text}
                   </Typography>
                 ))}
-              {children}
+              {children !== undefined && children}
             </Container>
           </Box>
         </Grid>

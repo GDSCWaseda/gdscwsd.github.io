@@ -24,6 +24,12 @@ export interface ImageCardProps {
   imagePosition: string
 }
 
+export interface MediaCardProps {
+  size: 's' | 'm' | 'l'
+  title: string
+  image?: string
+}
+
 export interface ImageIconProps {
   size: 's' | 'm' | 'l'
   title?: string
