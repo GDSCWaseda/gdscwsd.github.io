@@ -29,7 +29,9 @@ export const Footer = (): JSX.Element => {
       <div className="footer__logo-container">
         <a
           href="https://gdsc.community.dev/waseda-university/"
+          target="_blank"
           className="footer__path-item"
+          rel="noreferrer"
         >
           <img src={Google} />
         </a>
