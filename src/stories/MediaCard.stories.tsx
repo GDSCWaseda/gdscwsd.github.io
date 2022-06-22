@@ -100,7 +100,7 @@ export default {
     size: { options: ['s', 'm', 'l'], control: { type: 'radio' } },
     title: { control: 'text' },
     open: { control: 'boolean' },
-    canOpen: { control: 'boolean' },
+    canOpen: { control: 'boolean' }
   },
-  parameters: { actions: { argTypesRegex: '^on.*' } },
+  parameters: { actions: { argTypesRegex: '^on.*' } }
 } as ComponentMeta<typeof MediaCard>
