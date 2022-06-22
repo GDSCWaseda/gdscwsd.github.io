@@ -15,15 +15,14 @@ export const ImageCard: React.FC<{
   props: ImageCardProps
 }> = ({ children, props }) => {
   const Image = require(`assets/img/${props.image}`)
-  const Direction = props.imagePosition === 'left' ? 'row' : 'row-reverse'
 
   return (
     <Box padding={3}>
       <Grid
         container
-        direction={Direction}
         justifyContent="center"
         alignItems="center"
+        className={props.imagePosition}
       >
         <Grid item sm="auto">
           <img src={Image} height="auto" width="100%" max-width="350px" />

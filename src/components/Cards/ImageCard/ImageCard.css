@@ -1,0 +1,19 @@
+.MuiGrid-root.left {
+  flex-direction: row;
+}
+
+@media (max-width: 798px) {
+  .MuiGrid-root.left {
+    flex-direction: column;
+  }
+}
+
+.MuiGrid-root.right {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 798px) {
+  .MuiGrid-root.right {
+    flex-direction: column-reverse;
+  }
+}
