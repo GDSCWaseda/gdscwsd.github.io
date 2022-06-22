@@ -10,6 +10,4 @@ export const parameters = {
   }
 }
 
-export const decorators = [
-	muiTheme()
-];
+export const decorators = [muiTheme()]
