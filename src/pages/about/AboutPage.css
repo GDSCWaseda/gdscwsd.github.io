@@ -1,8 +1,8 @@
-.button {
+.about-page__button {
   padding: 10px;
   width: 110px;
   border-radius: 25px;
 }
-button.button.btn.btn-outline-dark:hover a {
+button.about-page__button.btn.btn-outline-dark:hover a {
   color: white;
 }

@@ -1,19 +1,25 @@
-.MuiGrid-root.left {
+.MuiGrid-root.image-card__layout--left {
   flex-direction: row;
 }
 
 @media (max-width: 798px) {
-  .MuiGrid-root.left {
+  .MuiGrid-root.image-card__layout--left {
     flex-direction: column;
   }
 }
 
-.MuiGrid-root.right {
+.MuiGrid-root.image-card__layout--right {
   flex-direction: row-reverse;
 }
 
 @media (max-width: 798px) {
-  .MuiGrid-root.right {
+  .MuiGrid-root.image-card__layout--right {
     flex-direction: column-reverse;
   }
+}
+
+.image-card__image {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
 }

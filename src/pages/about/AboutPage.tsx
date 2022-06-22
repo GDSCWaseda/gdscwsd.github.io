@@ -25,15 +25,19 @@ export const AboutPage: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="about-page">
       <HeaderCard props={card} />
       <ImageCard props={imageCard}>
         <Stack spacing={2} direction="row" padding={2}>
-          <Button variant="outline-dark" className="button">
+          <Button variant="outline-dark" className="about-page__button">
             <Link to="/teams">Teams</Link>
           </Button>
           {/* TODO: remove disabled when Event Page is released */}
-          <Button variant="outline-dark" className="button" disabled>
+          <Button
+            variant="outline-dark"
+            className="about-page__button"
+            disabled
+          >
             <Link to="/events">Events</Link>
           </Button>
         </Stack>

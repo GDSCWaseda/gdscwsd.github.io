@@ -17,15 +17,15 @@ export const ImageCard: React.FC<{
   const Image = require(`assets/img/${props.image}`)
 
   return (
-    <Box padding={3}>
+    <Box padding={3} className="image-card">
       <Grid
         container
         justifyContent="center"
         alignItems="center"
-        className={props.imagePosition}
+        className={`image-card__layout--${props.imagePosition}`}
       >
         <Grid item sm="auto">
-          <img src={Image} height="auto" width="100%" max-width="350px" />
+          <img className="image-card__image" src={Image} />
         </Grid>
         <Grid item sm="auto">
           <Box padding={2} sx={{ maxWidth: 430, border: 0 }}>
