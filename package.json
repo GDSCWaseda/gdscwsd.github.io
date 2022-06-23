@@ -24,7 +24,7 @@
     "react-router-dom": "^6.2.1",
     "storybook-addon-material-ui": "^0.9.0-alpha.24",
     "storybook-preset-craco": "^0.0.6",
-    "trim-newlines": "^4.0.2",
+    "react-scripts": "5.0.1",
     "tspath": "^1.2.10",
     "typescript": "^4.7.3",
     "web-vitals": "^1.1.2"

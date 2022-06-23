@@ -13,7 +13,6 @@ import { useState } from 'react'
 
 const API_URL: string = env.API_URL
 export const getData = () => {
-
   const [data, setData] = useState({})
   axis
     .get(API_URL)
@@ -24,5 +23,5 @@ export const getData = () => {
     .catch(error => {
       console.log(error)
     })
-  return data;
+  return data
 }
