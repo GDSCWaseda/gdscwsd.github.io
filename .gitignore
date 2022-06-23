@@ -14,4 +14,3 @@ yarn-error.log*
 .npm/
 .lein/
 storybook-static
-env.js
