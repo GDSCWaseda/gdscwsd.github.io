@@ -13,15 +13,16 @@ import { useState } from 'react'
 
 const API_URL: string = env.API_URL
 export const getData = () => {
-  console.log(API_URL)
+
+  const [data, setData] = useState({})
   axis
-    .get(API_URL) // GETメソッドを呼び出す
+    .get(API_URL)
     .then(res => {
-      // レスポンスを受け取ったらthenを実行する
       console.log(res)
+      setData(data)
     })
     .catch(error => {
-      // エラーコードが返ってきた場合
-      console.log(error) // エラーコードを表示
+      console.log(error)
     })
+  return data;
 }
