@@ -1,0 +1,35 @@
+.headerCard {
+  border: 0px;
+  border-radius: 0px;
+  min-height: 200px;
+  padding: 0 40px;
+  background-color: lightgrey;
+  justify-content: center;
+
+  @media (min-width: 790px) {
+    height: 350px;
+  }
+  &__headerTitle {
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    font-size: max(4vw, 30px);
+  }
+  &__container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  &__logoRight,
+  &__logoLeft {
+    width: 100%;
+    min-width: 20px;
+    max-width: 60px;
+  }
+  &__contents {
+    padding-top: 10px;
+    text-align: center;
+    font-size: max(1.5vw, 15px);
+  }
+}

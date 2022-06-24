@@ -1,0 +1,22 @@
+.error {
+  margin-top: 30vh;
+  text-align: center;
+  &__container {
+    position: relative;
+    padding: 10px;
+    top: 50%;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__detail {
+    margin-bottom: 25px;
+  }
+  &__button {
+    margin-top: 15px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
