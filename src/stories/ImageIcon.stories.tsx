@@ -1,48 +1,23 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-var-requires */
-
-import 'components/ImageIcon/ImageIcon.css'
-
-import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { Link, MemoryRouter } from 'react-router-dom'
 
-const ImageIcon: React.FC<{
+import { ImageIcon } from 'components/ImageIcon'
+
+const ImageIconRender: React.FC<{
   children?: React.ReactNode
   image: string
   size: 's' | 'm' | 'l'
   color: 'red' | 'green' | 'blue' | 'yellow'
   title: string
 }> = ({ children, ...props }) => {
-  const Image =
-    props.image !== undefined ? require(`assets/img/${props.image}`) : null
 
   return (
-    <div className={`image-icon ${props.size}`}>
-      <div className={`image-icon__image-container ${props.size}`}>
-        {props.image !== undefined ? (
-          <img
-            className={`image-icon__image ${props.size} ${props.color}`}
-            src={Image}
-          />
-        ) : (
-          <div className={`image-icon__image ${props.size} ${props.color}`} />
-        )}
-      </div>
-      <div className="image-icon__detail-container">
-        {props.title !== undefined && (
-          <div className="image-icon__title">{props.title}</div>
-        )}
-        <div className="image-icon__other">
-          {children !== undefined && children}
-        </div>
-      </div>
-    </div>
+    <ImageIcon props={props}>{children}</ImageIcon>
   )
 }
 
-const Template: ComponentStory<typeof ImageIcon> = ({ children, ...args }) => (
-  <ImageIcon {...args}>{children}</ImageIcon>
+const Template: ComponentStory<typeof ImageIconRender> = ({ children, ...args }) => (
+  <ImageIconRender {...args}>{children}</ImageIconRender>
 )
 export const Large = Template.bind({})
 

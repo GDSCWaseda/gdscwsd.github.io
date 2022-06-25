@@ -1,12 +1,12 @@
 import './AboutPage.css'
 
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Stack from '@mui/material/Stack'
+import { API_URL } from 'api/google-sheets'
+import { ImageCard, HeaderCard } from 'components/Cards'
 import Button from 'react-bootstrap/Button'
 
-import { ImageCard, HeaderCard } from 'components/Cards/index'
 import { HeaderCardProps, ImageCardProps } from '~/types/index'
 
 export const AboutPage: React.FC = () => {
@@ -42,6 +42,13 @@ export const AboutPage: React.FC = () => {
           </Button>
         </Stack>
       </ImageCard>
+      <Button
+        onClick={() => {
+          console.log(API_URL)
+        }}
+      >
+        CLICK ME
+      </Button>
     </div>
   )
 }

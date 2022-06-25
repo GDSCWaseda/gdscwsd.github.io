@@ -1,9 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 import './ImageIcon.css'
-
-import React from 'react'
 
 import { ImageIconProps } from '~/types/index'
 

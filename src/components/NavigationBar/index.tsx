@@ -1,10 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './NavigationBar.css'
 
-import React from 'react'
-import { Link } from 'react-router-dom'
-
 import { Container, Nav, Button, Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import logo from 'assets/svg/logo.svg'
 

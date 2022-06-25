@@ -1,11 +1,11 @@
 import '../TeamsPage.css'
 
+import Image from 'assets/img/placeholder.jpeg'
+import { HeaderCard, MembersCard } from 'components/Cards'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import { HeaderCard, MembersCard } from 'components/Cards/index'
-import Image from 'assets/img/placeholder.jpeg'
-import React from 'react'
 import Row from 'react-bootstrap/Row'
+
 import { HeaderCardProps, MembersCardProps } from '~/types/index'
 
 export const FrontendTeamPage: React.FC = (): JSX.Element => {

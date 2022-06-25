@@ -2,13 +2,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import './ImageCard.css'
 
-import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 
 import { ImageCardProps } from '~/types/index'
-import React from 'react'
 
 export const ImageCard: React.FC<{
   children?: React.ReactNode

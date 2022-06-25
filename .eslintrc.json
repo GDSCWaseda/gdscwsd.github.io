@@ -1,90 +1,70 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
     "plugin:react/recommended",
+    "eslint:recommended",
     "standard",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
+    "prettier",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript",
-    "prettier"
+    "plugin:css/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": "./",
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 12,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "import"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier", "css"],
   "rules": {
-    "semi": ["off", "always"],
-    "import/no-named-as-default": "off",
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/no-unescaped-entities": "off",
-    "no-use-before-define": "off",
     "no-void": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "react/jsx-filename-extension": [
-      "error",
-      { "extensions": [".jsx", ".tsx"] }
-    ],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
-  },
-  "settings": {
-    "import/extensions": [".js", ".ts", ".tsx"],
-    "import/parsers": {
-      "@typescript-eslint/parser": [".js", ".ts", ".tsx"]
-    },
+    "import/no-duplicates": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
     "import/order": [
       "error",
       {
         "groups": [
           "builtin",
           "external",
-          "internal",
-          ["parent", "sibling"],
+          "parent",
+          "sibling",
+          "index",
           "object",
-          "type",
-          "index"
+          "type"
         ],
-        "newlines-between": "always", // グループ毎にで改行を入れる
+        "pathGroups": [
+          {
+            "pattern": "{react,react-*,react-bootstrap*,@storybook/*}",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@src/**",
+            "group": "parent",
+            "position": "before"
+          }
+        ],
         "pathGroupsExcludedImportTypes": ["builtin"],
         "alphabetize": {
-          "order": "asc", // 昇順にソート
-          "caseInsensitive": true // 小文字大文字を区別する
-        }
+          "order": "asc"
+        },
+        "newlines-between": "always"
       }
-    ],
-    "import/resolver": {
-      "typescript": {},
-      "alias": {
-        "map": [["~", "./"]],
-        "extensions": [".ts", ".js", ".json"]
-      },
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    },
+    ]
+  },
+  "settings": {
     "react": {
       "version": "detect"
     }

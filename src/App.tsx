@@ -6,10 +6,11 @@ react-router-dom v6 から、講義中のバージョンとは以下の箇所が
 3. "exact path"→"path"
 4. "component={ コンポーネント名 }"→"element={ < コンポーネント名 /> }"
 */
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import NavigationBar from 'components/NavigationBar/NavigationBar'
-import Footer from 'components/Footer/Footer'
-import React from 'react'
+
+import Footer from '~/components/Footer'
+import NavigationBar from '~/components/NavigationBar'
 import {
   ErrorPage,
   AboutPage,

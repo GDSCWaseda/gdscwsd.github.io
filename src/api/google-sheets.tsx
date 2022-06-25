@@ -7,21 +7,21 @@ API to fetch from google sheets
 
 */
 
-import env from 'react-dotenv'
-import axis from 'axios'
 import { useState } from 'react'
 
-const API_URL: string = env.API_URL
+import axis from 'axios'
+
+export const API_URL: string = process.env.REACT_APP_API_URL || ''
 export const getData = () => {
-  const [data, setData] = useState({})
-  axis
+  console.log(API_URL)
+  /* axis
     .get(API_URL)
-    .then(res => {
+    .then((res: any) => {
       console.log(res)
       setData(data)
     })
-    .catch(error => {
+    .catch((error: any) => {
       console.log(error)
     })
-  return data
+  return data */
 }

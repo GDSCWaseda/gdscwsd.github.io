@@ -2,11 +2,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import './MediaCard.css'
 
-import Collapse from '@mui/material/Collapse'
+import React, { useState } from 'react'
+
 import { ArrowDropDown, ArrowDropUp } from '@mui/icons-material'
+import Collapse from '@mui/material/Collapse'
 
 import { MediaCardProps } from '~/types/index'
-import React, { useState } from 'react'
 
 export const MediaCard: React.FC<{
   children?: React.ReactNode
@@ -46,7 +47,7 @@ export const MediaCard: React.FC<{
           </>
         )}
         <Collapse in={props.canOpen && open} timeout="auto" unmountOnExit>
-          <div className={`media-card__other`}>
+          <div className={'media-card__other'}>
             {children !== undefined && children}
           </div>
         </Collapse>

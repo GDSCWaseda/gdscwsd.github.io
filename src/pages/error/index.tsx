@@ -1,8 +1,9 @@
 import './ErrorPage.css'
 
-import React from 'react'
 import { Link } from 'react-router-dom'
+
 import Button from 'react-bootstrap/Button'
+
 import { ErrorPageProps } from '~/types/index'
 
 export const ErrorPage: React.FC<{ props: ErrorPageProps }> = ({ props }) => {

@@ -1,15 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-var-requires */
-import 'components/Cards/MediaCard/MediaCard.css'
+import { MediaCard } from 'components/Cards'
 
-import Collapse from '@mui/material/Collapse'
-import { ArrowDropDown, ArrowDropUp } from '@mui/icons-material'
-
-import React, { useState } from 'react'
-
-const MediaCard: React.FC<{
+const MediaCardRender: React.FC<{
   children?: React.ReactNode
   image: string
   size: 's' | 'm' | 'l'
@@ -17,52 +10,13 @@ const MediaCard: React.FC<{
   title: string
   canOpen: boolean
 }> = ({ children, ...props }) => {
-  const Image =
-    props.image !== undefined ? require(`assets/img/${props.image}`) : null
-
-  const [open, setOpen] = useState(props.open)
-
-  const onClick = () => setOpen(!open)
-
-  return (
-    <div className={`media-card ${props.size}`}>
-      {props.image !== undefined ? (
-        <div className={`media-card__image-container ${props.size}`}>
-          <img className={`media-card__image ${props.size}`} src={Image} />
-        </div>
-      ) : (
-        <div className={`media-card__image-container ${props.size} none`} />
-      )}
-      <div className="media-card__detail-container" onClick={onClick}>
-        {props.title !== undefined && (
-          <>
-            {props.canOpen && (
-              <div className="media-card__collapse">
-                <div className="media-card__collapse-container">
-                  {children !== undefined && open ? (
-                    <ArrowDropUp />
-                  ) : (
-                    <ArrowDropDown />
-                  )}
-                </div>
-              </div>
-            )}
-            <div className="media-card__title">{props.title}</div>
-          </>
-        )}
-        <Collapse in={props.canOpen && open} timeout="auto" unmountOnExit>
-          <div className={`media-card__other`}>
-            {children !== undefined && children}
-          </div>
-        </Collapse>
-      </div>
-    </div>
-  )
+  return <MediaCard props={props}>{children}</MediaCard>
 }
 
-const Template: ComponentStory<typeof MediaCard> = ({ children, ...args }) => (
-  <MediaCard {...args}>{children}</MediaCard>
-)
+const Template: ComponentStory<typeof MediaCardRender> = ({
+  children,
+  ...args
+}) => <MediaCardRender {...args}>{children}</MediaCardRender>
 
 export const MembersCard = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

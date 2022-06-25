@@ -1,7 +1,5 @@
 import './HeaderCard.css'
 
-import React from 'react'
-
 import { Col, Row, Card } from 'react-bootstrap'
 
 import LogoLeft from 'assets/svg/logo-left.svg'

@@ -1,1 +1,1 @@
-export { FeedbackForm } from './FeedbackForm/FeedbackForm'
+export { FeedbackForm } from './FeedbackForm'

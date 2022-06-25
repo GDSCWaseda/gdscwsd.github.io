@@ -1,12 +1,13 @@
 import './MembersCard.css'
 
+import { Link } from 'react-router-dom'
+
+import Image from 'assets/img/placeholder.jpeg'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Image from 'assets/img/placeholder.jpeg'
-import { Link } from 'react-router-dom'
-import React from 'react'
 import Row from 'react-bootstrap/Row'
+
 import { MembersCardProps, MemberType } from '~/types/index'
 
 export const MembersCard: React.FC<{ props: MembersCardProps }> = ({

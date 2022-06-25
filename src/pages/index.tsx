@@ -1,5 +1,5 @@
 // Team Pages
-export { TeamPage } from './teams/TeamsPage'
+export { TeamPage } from './teams'
 export { BackendTeamPage } from './teams/team/Backend'
 export { EducationTeamPage } from './teams/team/Education'
 export { EventTeamPage } from './teams/team/Event'
@@ -10,7 +10,7 @@ export { OutreachTeamPage } from './teams/team/Outreach'
 export { ProjectTeamPage } from './teams/team/Project'
 
 // About Page
-export { AboutPage } from './about/AboutPage'
+export { AboutPage } from './about'
 
 // Error Page
-export { ErrorPage } from './error/ErrorPage'
+export { ErrorPage } from './error'
