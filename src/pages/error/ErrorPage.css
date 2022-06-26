@@ -1,0 +1,18 @@
+.error {
+  margin-top: 30vh;
+  text-align: center;
+}
+.error__container {
+  position: relative;
+  padding: 10px;
+  top: 50%;
+}
+.error__title {
+  margin-bottom: 40px;
+}
+.error__detail {
+  margin-bottom: 25px;
+}
+.error__button {
+  margin-top: 15px;
+}

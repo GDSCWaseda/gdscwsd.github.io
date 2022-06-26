@@ -1,0 +1,33 @@
+.feedback-form {
+  padding: 10px 15px;
+  max-width: 500px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.feedback-form__title {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.feedback-form__description {
+  padding: 3px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.feedback-form__container {
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+.feedback-form__items {
+  padding: 10px;
+}
+
+.feedback-form__item-name {
+  margin-bottom: 10px;
+}
+
+.feedback-form__item-input {
+  margin-bottom: 15px;
+}

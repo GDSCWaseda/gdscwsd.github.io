@@ -6,8 +6,9 @@
 ### Initializing
 
 1. Clone the repository 
+  
 ```
-git clone https://github.com/GDSCWaseda/gdscwsd.github.io.git
+ads
 ```
 2. Package install
 ```

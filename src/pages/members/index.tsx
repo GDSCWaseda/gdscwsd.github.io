@@ -1,7 +1,5 @@
 import './MembersPage.css'
 
-import React from 'react'
-
 export const MembersPage = () => {
   return (
     <div>

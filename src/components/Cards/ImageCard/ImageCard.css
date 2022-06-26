@@ -1,0 +1,29 @@
+.MuiGrid-root.image-card__layout--left {
+  flex-direction: row;
+}
+
+@media (max-width: 798px) {
+  .MuiGrid-root.image-card__layout--left {
+    flex-direction: column;
+  }
+}
+
+.MuiGrid-root.image-card__layout--right {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 798px) {
+  .MuiGrid-root.image-card__layout--right {
+    flex-direction: column-reverse;
+  }
+}
+
+.image-card__image {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+}
+
+.image-card__others {
+  padding: 0px 10px;
+}
