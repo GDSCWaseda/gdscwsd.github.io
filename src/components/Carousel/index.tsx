@@ -1,7 +1,7 @@
 import './Carousel.css'
 import { useRef } from 'react'
 
-import { CarouselCard } from './CarouselCard'
+import { CarouselCard } from 'components/Cards'
 
 import { CarouselCardProps } from '~/types'
 

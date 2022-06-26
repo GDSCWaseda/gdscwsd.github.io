@@ -33,21 +33,21 @@ export const AboutPage: React.FC = () => {
 
   const carouselCards: Array<CarouselCardProps> = [
     {
-      image: 'workshop.png',
-      title: 'Hands-on Workshop',
-      date: 'JUN 22, 2022',
+      image: 'events/workshop.png',
+      subtitle: 'Hands-on Workshop',
+      title: 'JUN 22, 2022',
       old: true
     },
     {
-      image: 'demoday.png',
-      title: 'Demo Day',
-      date: 'JUL 17, 2022',
+      image: 'events/demoday.png',
+      subtitle: 'Demo Day',
+      title: 'JUL 17, 2022',
       old: false
     },
     {
-      image: 'tech-talk-1.png',
-      title: 'Speaker Session / Tech Talk',
-      date: 'APR 21, 2022',
+      image: 'events/tech-talk-1.png',
+      subtitle: 'Speaker Session / Tech Talk',
+      title: 'APR 21, 2022',
       old: true
     }
   ]

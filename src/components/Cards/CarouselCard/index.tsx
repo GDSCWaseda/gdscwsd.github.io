@@ -8,10 +8,10 @@ export const CarouselCard: React.FC<{ props: CarouselCardProps }> = ({
   const isOld = props.old ? 'old' : ''
   return (
     <div className={`carousel-card ${isOld}`}>
-      <img src={`events/${props.image}`} />
+      <img src={props.image} />
       <div className="carousel-card__container">
-        <div className="carousel-card__date">{props.date}</div>
         <div className="carousel-card__title">{props.title}</div>
+        <div className="carousel-card__subtitle">{props.subtitle}</div>
       </div>
     </div>
   )

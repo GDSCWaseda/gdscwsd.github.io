@@ -10,8 +10,8 @@ export interface MetaType {
 /* Cards */
 export interface CarouselCardProps {
   image: string
+  subtitle: string
   title: string
-  date: string
   old: boolean
 }
 export interface MemberType {
