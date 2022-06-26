@@ -1,10 +1,7 @@
-
-
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { MemoryRouter } from 'react-router-dom'
 
 import { NavigationBar } from 'components/NavigationBar'
-
 
 const Template: ComponentStory<typeof NavigationBar> = _1 => <NavigationBar />
 

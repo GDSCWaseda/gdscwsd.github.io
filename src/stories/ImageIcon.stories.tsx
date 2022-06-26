@@ -10,15 +10,13 @@ const ImageIconRender: React.FC<{
   color: 'red' | 'green' | 'blue' | 'yellow'
   title: string
 }> = ({ children, ...props }) => {
-
-  return (
-    <ImageIcon props={props}>{children}</ImageIcon>
-  )
+  return <ImageIcon props={props}>{children}</ImageIcon>
 }
 
-const Template: ComponentStory<typeof ImageIconRender> = ({ children, ...args }) => (
-  <ImageIconRender {...args}>{children}</ImageIconRender>
-)
+const Template: ComponentStory<typeof ImageIconRender> = ({
+  children,
+  ...args
+}) => <ImageIconRender {...args}>{children}</ImageIconRender>
 export const Large = Template.bind({})
 
 Large.args = {
