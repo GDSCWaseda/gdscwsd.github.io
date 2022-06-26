@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+import { HelmetProvider } from 'react-helmet-async'
 
 import * as ReactDOM from 'react-dom/client'
 
@@ -10,6 +11,8 @@ if (!rootElement) throw new Error('Failed to find the root element')
 const root = ReactDOM.createRoot(rootElement)
 root.render(
   <StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </StrictMode>
 )

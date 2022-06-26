@@ -1,4 +1,19 @@
+/* Meta */
+export interface MetaType {
+  title: string
+  description: string
+  page: string
+  keywords?: string
+  image?: string
+}
+
 /* Cards */
+export interface CarouselCardProps {
+  image: string
+  title: string
+  date: string
+  old: boolean
+}
 export interface MemberType {
   firstName: string
   lastName?: string
