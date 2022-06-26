@@ -9,8 +9,9 @@ react-router-dom v6 から、講義中のバージョンとは以下の箇所が
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Footer from '~/components/Footer'
-import NavigationBar from '~/components/NavigationBar'
+import Footer from 'components/Footer'
+import NavigationBar from 'components/NavigationBar'
+
 import {
   ErrorPage,
   AboutPage,
@@ -23,7 +24,7 @@ import {
   MarketingTeamPage,
   OutreachTeamPage,
   ProjectTeamPage
-} from 'pages/index'
+} from './pages'
 
 function App(): JSX.Element {
   return (
