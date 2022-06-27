@@ -23,6 +23,6 @@
       "settings/*": ["settings/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/*", "src/components/Cards/MediaCard/index.tsx", "src/components/NavigationBar/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/*"],
   "exclude": ["node_modules"]
 }

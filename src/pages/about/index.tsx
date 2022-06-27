@@ -10,7 +10,9 @@ import { ImageCard, HeaderCard } from 'components/Cards/index'
 import { Carousel } from 'components/Carousel'
 import CommonMeta from 'components/CommonMeta'
 import {
-  HeaderCardProps, ImageCardProps, CarouselCardProps
+  HeaderCardProps,
+  ImageCardProps,
+  CarouselCardProps
 } from '~/types/index'
 
 export const AboutPage: NextPage = () => {
@@ -46,7 +48,7 @@ export const AboutPage: NextPage = () => {
       title: 'Speaker Session / Tech Talk',
       date: 'APR 21, 2022',
       old: true
-    },
+    }
   ]
   /*
   useEffect(() => {
@@ -78,8 +80,7 @@ export const AboutPage: NextPage = () => {
             Build Good Things, Together
           </div>
           <div className="about-page__events__description">
-            Innovation never ends. Join us as we explore topics from all
-            fields.
+            Innovation never ends. Join us as we explore topics from all fields.
           </div>
         </div>
         <div className="about-page__events__carousel">

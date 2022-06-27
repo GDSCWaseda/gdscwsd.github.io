@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: true
 }
 
 module.exports = {
@@ -9,5 +9,4 @@ module.exports = {
     ignoreDuringBuilds: true
   },
   experimental: { images: { layoutRaw: true } }
-
 }
