@@ -1,0 +1,31 @@
+.carousel-card {
+  padding: 15px;
+
+  img {
+    max-width: 200px;
+    @media (max-width: 798px) {
+      max-width: 100px;
+    }
+  }
+
+  &__image {
+    max-width: 200px;
+    @media (max-width: 798px) {
+      max-width: 100px;
+    }
+  }
+  &__container {
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  &.old {
+    opacity: 0.6;
+  }
+
+  @media (max-width: 798px) {
+    .button {
+      display: none;
+    }
+  }
+}

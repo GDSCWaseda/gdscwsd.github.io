@@ -1,0 +1,16 @@
+.carousel {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 20px;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+}

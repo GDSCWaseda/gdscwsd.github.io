@@ -5,6 +5,12 @@ export interface MemberType {
   photo_link?: string
 }
 
+export interface CarouselCardProps {
+  image: string
+  title: string
+  date: string
+  old: boolean
+}
 export interface MembersCardProps {
   teamName: string
   leader: MemberType
