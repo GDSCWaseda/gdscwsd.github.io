@@ -7,5 +7,5 @@ module.exports = {
   nextConfig,
   eslint: {
     ignoreDuringBuilds: true
-  }
+  },
 }

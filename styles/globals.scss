@@ -1,0 +1,22 @@
+@import "./pages/error.scss";
+@import "./pages/aboutpage.scss";
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/HeaderCard.scss";
+@import "./components/ImageCard.scss";
+@import "./components/MediaCard.scss";
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Rubik", "Outfit", sans-serif;
+}
+
+button.about-page__button.btn.btn-outline-dark:hover a {
+  color: white;
+}
+a {
+  color: black;
+  text-decoration: none;
+}

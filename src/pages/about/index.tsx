@@ -1,5 +1,3 @@
-import './AboutPage.module.css'
-
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import { useEffect } from 'react'
@@ -27,9 +25,10 @@ export const AboutPage: NextPage = () => {
     imagePosition: 'right'
   }
 
+  /*
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-AboutPage' })
-  }, [])
+  }, []) */
 
   return (
     <div className="about-page">

@@ -5,8 +5,6 @@ import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 
-import styles from './ImageCard.module.scss'
-
 import { ImageCardProps } from '~/types/index'
 
 export const ImageCard: React.FC<{
@@ -15,7 +13,7 @@ export const ImageCard: React.FC<{
 }> = ({ children, props }) => {
   const imageProps = (
     <Image
-      className={styles.imageCard__image}
+      className="imageCard__image"
       src={require(`assets/img/${props.image}`)}
       layout="intrinsic"
       alt="image-card"
@@ -40,7 +38,7 @@ export const ImageCard: React.FC<{
             </Typography>
           ))}
         {children !== undefined && (
-          <div className={styles.imageCard__others}>{children}</div>
+          <div className="imageCard__others">{children}</div>
         )}
       </Container>
     </Box>

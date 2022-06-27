@@ -3,13 +3,13 @@ import type { NextPage } from 'next'
 import CommonMeta from 'components/CommonMeta'
 import { ErrorPage } from 'pages/404'
 
-const Home: NextPage = () => {
+const Teams: NextPage = () => {
   return (
     <>
-      <CommonMeta title="Home" />
+      <CommonMeta title="Team" />
       <ErrorPage text="dev" />
     </>
   )
 }
 
-export default Home
+export default Teams

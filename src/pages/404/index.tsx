@@ -4,32 +4,28 @@ import { useRouter } from 'next/router'
 
 import Button from 'react-bootstrap/Button'
 
-import styles from './404.module.scss'
-
-export const ErrorPage: NextPage = () => {
+export const ErrorPage: NextPage<{ text?: string }> = ({ text }) => {
   const router = useRouter()
 
   const message = (text: string) => {
     switch (text) {
-      case 'error':
-        return "This page doesn't exist"
       case 'dev':
         return 'This page is under development'
       default:
-        return text
+        return "This page doesn't exist"
     }
   }
 
   console.log(router.pathname)
 
   return (
-    <div className={styles.error}>
-      <div className={styles.error__container}>
-        <h1 className={styles.error__title}>
+    <div className="error">
+      <div className="error__container">
+        <h1 className="error__title">
           We're sorry, but there seems to be a problem
         </h1>
-        <h2 className={styles.error__detail}>{"This page doesn't exist"}</h2>
-        <Button className={styles.error__button}>
+        <h2 className="error__detail">{text && message(text)}</h2>
+        <Button className="error__button">
           <Link href="/">Go back to Home</Link>
         </Button>
       </div>
