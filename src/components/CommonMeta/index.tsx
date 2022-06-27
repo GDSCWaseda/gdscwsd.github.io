@@ -10,7 +10,7 @@ export default function CommonMeta({
       <title>{title} | GDSC Waseda</title>
       <meta property="description" content={description} />
       <meta property="og:title" content={`${title} | GDSC Waseda`} />
-      <meta property="og:image" content={`${process.env}/logo.svg"`} />
+      <meta property="og:image" content="/logo.svg" />
       <meta
         property="og:description"
         content={`${description} | GDSC Waseda is a student society supported by Google Developers based in Waseda Univ., Tokyo`}

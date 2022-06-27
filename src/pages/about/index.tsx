@@ -33,20 +33,20 @@ export const AboutPage: NextPage = () => {
   const carouselCards: Array<CarouselCardProps> = [
     {
       image: 'workshop.png',
-      title: 'Hands-on Workshop',
-      date: 'JUN 22, 2022',
+      subtitle: 'Hands-on Workshop',
+      title: 'JUN 22, 2022',
       old: true
     },
     {
       image: 'demoday.png',
-      title: 'Demo Day',
-      date: 'JUL 17, 2022',
+      subtitle: 'Demo Day',
+      title: 'JUL 17, 2022',
       old: false
     },
     {
       image: 'tech-talk-1.png',
-      title: 'Speaker Session / Tech Talk',
-      date: 'APR 21, 2022',
+      subtitle: 'Speaker Session / Tech Talk',
+      title: 'APR 21, 2022',
       old: true
     }
   ]

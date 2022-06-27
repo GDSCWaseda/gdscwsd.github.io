@@ -7,10 +7,11 @@ export interface MemberType {
 
 export interface CarouselCardProps {
   image: string
+  subtitle: string
   title: string
-  date: string
   old: boolean
 }
+
 export interface MembersCardProps {
   teamName: string
   leader: MemberType

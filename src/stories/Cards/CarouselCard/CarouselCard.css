@@ -1,0 +1,29 @@
+.carousel-card {
+  padding: 15px;
+  text-align: center;
+}
+
+img {
+  max-width: 200px;
+}
+
+@media (max-width: 798px) {
+  img {
+    max-width: 100px;
+  }
+}
+
+.carousel-card__container {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.old {
+  opacity: 0.6;
+}
+
+@media (max-width: 798px) {
+  .button {
+    display: none;
+  }
+}
