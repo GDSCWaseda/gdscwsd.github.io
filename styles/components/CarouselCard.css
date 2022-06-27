@@ -1,0 +1,39 @@
+.carousel-card {
+  padding: 15px;
+}
+
+.carousel-card img {
+  max-width: 200px;
+}
+
+@media (max-width: 798px) {
+  .carousel-card img {
+    max-width: 100px;
+  }
+}
+
+.carousel-card__image {
+  max-width: 200px;
+}
+
+@media (max-width: 798px) {
+  .carousel-card__image {
+    max-width: 100px;
+  }
+}
+
+.carousel-card__container {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.carousel-card.old {
+  opacity: 0.6;
+}
+
+@media (max-width: 798px) {
+  .carousel-card .button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=CarouselCard.css.map */

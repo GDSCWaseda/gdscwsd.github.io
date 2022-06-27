@@ -1,0 +1,10 @@
+.imageCard__image {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+}
+
+.imageCard__others {
+  padding: 0px 10px;
+}
+/*# sourceMappingURL=ImageCard.css.map */
